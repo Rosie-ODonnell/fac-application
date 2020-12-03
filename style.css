@@ -1,33 +1,67 @@
- body {
-     margin: 0;
- }
+
  
+ body {
+     margin: 0px;
+     padding: 0px;
+     height: 100vx;
+ }
+
+ button {
+    background-color: #CDC7E5;
+    border: none;
+    font-family: futura;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
  .wrapper {
  display: grid;
+ position: relative;
+ background-size: 100%;
  grid-template-rows: 25% 25% 25% 25% auto;
  width: 100vw;
  height: 100vw;
- margin-top: 0px;
- scroll-margin:0;
+ margin: 0 auto;
  /* vw meaning viewport height - will stretch to height of devive */
  }
 
-
- .blue-background {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #FFFFFF 50%, navy 50%);
-    margin: 0;    
+ .background {
+    width: 100vw; 
+    height: 100vh; 
+    background: linear-gradient(to right, #FFFFFF 50%, #CDC7E5 50%);
+    margin: 0%;    
+    background-size: auto;
 }
+/*so far the background is now responsive but need to work on text*/
 
-
-#quarter-one {
-    display:flex;
+.english {
+    display: block;
     justify-content: center;
     align-items: center;
     margin-top:0px;
     font-family: futura;
-    font-size: 100px;
+    font-size: 110px;
     color: #9AABAC;
+}
+
+.spanish {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top:0px;
+    font-family: futura;
+    font-size: 110px;
+    color: #9AABAC;
+}
+
+
+#quarter-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0px;
  
 }

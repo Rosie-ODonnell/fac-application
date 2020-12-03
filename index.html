@@ -2,14 +2,20 @@
 <html>
     <head>  
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="javascript" type="javascript" href="javascript.js">  
     </head>
     <body>
 <div class="wrapper">
-    <div class="blue-background" id="quarter-one">WELCOME</div>
-    <div class="blue-background" id="quarter-two"></div>
-    <div class="blue-background" id="quarter-three"></div>
-    <div class="blue-background" if="quarter-four"></div>
+    <div class="background" id="quarter-one">
+        <h1 class="english" id="active">WELCOME</h1>
+        <h1 class="spanish" id="nonActive">BIENVENIDA</h1>
+        <button onclick="languageClick()">ES</button>
+    </div>
+
+    <div class="background" id="quarter-two"></div>
+    <div class="background" id="quarter-three"></div>
+    <div class="background" if="quarter-four"></div>
 </div>
     </body>
+
+<script src= "javascript.js"> </script>
 </html>
