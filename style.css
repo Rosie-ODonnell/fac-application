@@ -5,7 +5,7 @@ body {
  }
 
  button {
-    background-color: #CDC7E5;
+    background-color:#94C9C9;
     border: none;
     outline: 0;
     font-family: futura;
@@ -27,10 +27,11 @@ body {
  /* vw meaning viewport height - will stretch to height of devive */
  }
 
+ 
  .background {
     width: 100vw; 
     height: 100vh; 
-    background: linear-gradient(to right, #FFFFFF 50%, #CDC7E5 50%);
+    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     margin: 0%;    
     background-size: auto;
 }
@@ -40,7 +41,7 @@ body {
 
     display: flex;
     font-size: 10vw;
-    color: #9AABAC;
+    color: #72716E;
     font-family: futura;
     justify-content: center;
     align-items: center;
