@@ -1,6 +1,4 @@
-
- 
- body {
+body {
      margin: 0px;
      padding: 0px;
      height: 100vx;
@@ -20,7 +18,7 @@
  .wrapper {
  display: grid;
  position: relative;
- background-size: 100%;
+ background-size: auto;
  grid-template-rows: 25% 25% 25% 25% auto;
  width: 100vw;
  height: 100vw;
@@ -38,13 +36,14 @@
 /*so far the background is now responsive but need to work on text*/
 
 .english {
-    display: block;
+
+    display: flex;
+    font-size: 10vw;
+    color: #9AABAC;
+    font-family: futura;
     justify-content: center;
     align-items: center;
-    margin-top:0px;
-    font-family: futura;
-    font-size: 110px;
-    color: #9AABAC;
+
 }
 
 .spanish {
@@ -55,13 +54,4 @@
     font-family: futura;
     font-size: 110px;
     color: #9AABAC;
-}
-
-
-#quarter-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:0px;
- 
 }
