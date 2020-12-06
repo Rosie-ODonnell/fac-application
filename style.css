@@ -4,11 +4,11 @@ body {
      height: 100vx;
  }
 
- button {
+ #language-button {
     background-color:#94C9C9;
     border: none;
     outline: 0;
-    font-family: futura;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: 2vw;
     position: absolute;
@@ -37,23 +37,85 @@ body {
 }
 /*so far the background is now responsive but need to work on text*/
 
-.english {
+#welcome {
 
     display: flex;
     font-size: 10vw;
     color: #72716E;
-    font-family: futura;
+    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
     align-items: center;
 
 }
+
+/*delete? */
+
+.english {
+    display: flex;
+    font-size: 10vw;
+    color: #72716E;
+    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*delete?*/
 
 .spanish {
     display: none;
     justify-content: center;
     align-items: center;
     margin-top:0px;
-    font-family: futura;
+    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 110px;
     color: #9AABAC;
+}
+
+#about-me-box-1 {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 0;
+    left: 200px;
+    top: 100px;
+    width: 30vw;
+    height: 40vh;
+    background-color: white;
+    border: solid f5f5f5;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    color: #72716E;
+   
+}
+#about-me-box-2 {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    left: 200px;
+    top: 100px;
+    width: 30vw;
+    height: 40vh;
+    background-color: white;
+    border: solid f5f5f5;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: #72716E;
+}
+
+#about-me-button {
+    border: none;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #72716E;
+    font-size: 1vw;
+    border: solid grey;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    
 }

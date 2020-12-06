@@ -1,46 +1,36 @@
-var languageButton = document.getElementsByTagName("button");
-console.log(languageButton);
-
-var english = document.getElementsByClassName("english");
-console.log(english)
-    // var englishDisplay = english.style.display;
-    // console.log(englishDisplay)
-
+// LANGUAGE BUTTON FUNCTION: 
 
 function languageClick() {
 
-    // var english = document.getElementsById("active");
-    // var englishDisplay = english.style.display;
-    // console.log(englishDisplay)
-    // englishDisplay = "none";
-
-    // var spanish = document.getElementById("nonActive");
-    // var spanishDisplay = spanish.style.display;
-    // spanishDisplay = "block";
-    
+    var languageButton = document.getElementsByTagName("button");
+    var english = document.getElementsByClassName("english");
+   
     var buttonText = languageButton[0]["innerText"];
     languageButton[0]["innerText"] = "EN";
 
     var english = document.getElementsByClassName("english");
     english[0]["innerText"] = "BIENVENIDA";
-
+    
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
         english[0]["innerText"] = "WELCOME";
-        // englishDisplay = "block";
-        // spanishDisplay = "none";
     };
 }
 
-// I could use the ID thing, but I could also just replace all of the text I want in this button = I can do that if it is too hard!
+//ABOUT ME FUNCTION:
 
-// function languageClick2 {
-//     var textChange = englishVersion.style.dislay;
-//     englishVersion.style.display = "none";
+function popUp(){
+    const newDiv = document.createElement("div"); //tag type anchor
+    const newContent = document.createTextNode("This section is going to tell you all about me and why I am applying for this course.");
+    newDiv.appendChild(newContent);
+    newDiv.id = "about-me-box-2";
+    const currentDiv = document.getElementById("about-me-box-1");
+    const insert = document.getElementById("quarter-two");
+    insert.insertBefore(newDiv, currentDiv); //(what I want, what I have: anchor)
+    
+}
 
-// }
+//this bit below isn't working, but works in separate folder
 
-// use the getElementsByClass - this will allow me to change all text with that class
+//document.body.onload = addElement;
 
-//you could add another class "active" - whcih the one displayed
-// you can then toggle classes
