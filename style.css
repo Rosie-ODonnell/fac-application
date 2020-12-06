@@ -73,14 +73,14 @@ body {
 }
 
 #about-me-box-1 {
-    position: relative;
+    position: absolute;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 0;
-    left: 200px;
-    top: 100px;
-    width: 30vw;
+    left: 5rem;
+    top: 30rem;
+    width: 40vw;
     height: 40vh;
     background-color: white;
     border: solid f5f5f5;
@@ -90,19 +90,20 @@ body {
    
 }
 #about-me-box-2 {
-    position: relative;
+
+    position: absolute;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 1;
-    left: 200px;
-    top: 100px;
-    width: 30vw;
+    left: 5rem;
+    top: 30rem;
+    width: 40vw;
     height: 40vh;
     background-color: white;
     border: solid f5f5f5;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #72716E;
 }
 
