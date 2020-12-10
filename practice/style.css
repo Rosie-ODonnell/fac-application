@@ -1,0 +1,137 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vx;
+}
+
+#language-button {
+   background-color:#94C9C9;
+   border: none;
+   outline: 0;
+   font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   font-size: 2vw;
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+}
+
+#FCC {
+   border: none;
+   outline: 0;
+   position: absolute;
+   top: 1rem;
+   left: 2rem;
+   
+}
+
+
+.wrapper {
+display: inline-grid;
+position: relative;
+background-size: auto;
+grid-template-rows: 25% 25% 25% 25% auto;
+width: 100vw;
+height: 100vw;
+margin: 0 auto;
+/* vw meaning viewport height - will stretch to height of devive */
+}
+/*this grid is currently not responsive*/
+
+.background {
+   width: 100vw; 
+   height: 100vh; 
+   background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
+   margin: 0%;    
+   background-size: auto;
+}
+/*so far the background is now responsive but need to work on text*/
+
+#quarter-one {
+   justify-self: center;
+   
+}
+
+#welcome {
+
+   display: flex;
+   font-size: 10vw;
+   color: #72716E;
+   font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   justify-content: center;
+   align-items: center;
+   cursor: url('cursor.png'), auto;
+   /*need to change this to correct file */
+   /* also need to make this lower down*/
+}
+
+
+#about-me-box-1 {
+   position: absolute;
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   z-index: 0;
+   left: 5rem;
+   top: 30rem;
+   width: 40vw;
+   height: 40vh;
+   background-color: white;
+   border: solid f5f5f5;
+   font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 3vw;
+   color: #72716E;
+  
+}
+
+#practice {
+   position: absolute;
+   display:none;
+   flex-direction: column;
+   justify-content: flex-start;
+   z-index: 1;
+   left: 5rem;
+   top: 30rem;
+   width: 40vw;
+   height: 40vh;
+   background-color: white;
+   border: solid f5f5f5;
+   font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 3vw;
+   color: #72716E;
+  
+}
+
+
+#about-me-box-2 {
+
+   position: absolute;
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   z-index: 1;
+   left: 5rem;
+   top: 30rem;
+   width: 40vw;
+   height: 40vh;
+   background-color: white;
+   border: solid f5f5f5;
+   font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 3vw;
+   color: #72716E;
+}
+
+#about-me-button {
+   border: none;
+   font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #72716E;
+   font-size: 1vw;
+   border: solid grey;
+   position: relative;
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: white;
+   
+}

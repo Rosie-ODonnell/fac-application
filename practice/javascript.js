@@ -1,3 +1,26 @@
+function languageClick() {
+
+    var languageButton = document.getElementsByTagName("button");
+    var english = document.getElementsByClassName("english");
+    
+   
+    var buttonText = languageButton[0]["innerText"];
+    languageButton[0]["innerText"] = "EN";
+
+    var english = document.getElementsByClassName("english");
+    english[0]["innerText"] = "BIENVENIDA";
+    //english[1]["innerText"] = "Acerca de mí";
+    //english[2]["InnerText"] = "Aqui estara la traduccion";
+    
+    if (buttonText == "EN") {
+        languageButton[0]["innerText"] = "ES";
+        english[0]["innerText"] = "WELCOME";
+        //english[1]["innerText"] = "About Me";
+    
+    };
+}
+
+
 // LANGUAGE BUTTON FUNCTION: 
 
 function languageClick() {

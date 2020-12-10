@@ -1,122 +1,84 @@
 body {
-     margin: 0px;
-     padding: 0px;
-     height: 100vx;
- }
+    padding: 0px;
+    margin: 0px;
+}
 
- #language-button {
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: auto 20% 20% 20% 20% auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-background-1{
+    background-color: #94C9C9;  
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+
+.grid-item-background-3 {
+    background-color: #94C9C9; 
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;  
+}
+
+.grid-item-background-4 {
+    background-color: #94C9C9; 
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;  
+}
+
+.grid-item-background-5 {
+    background-color: #94C9C9; 
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;  
+}
+
+.grid-item-background-6 {
+    background-color: #94C9C9; 
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;  
+}
+
+.header-left {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+}
+.header-right {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    right: 3rem;
+  
+
+}
+
+#language-button {
+    display: flex;
     background-color:#94C9C9;
     border: none;
     outline: 0;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: 2vw;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
 
- .wrapper {
- display: grid;
- position: relative;
- background-size: auto;
- grid-template-rows: 25% 25% 25% 25% auto;
- width: 100vw;
- height: 100vw;
- margin: 0 auto;
- /* vw meaning viewport height - will stretch to height of devive */
- }
 
- 
- .background {
-    width: 100vw; 
-    height: 100vh; 
-    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
-    margin: 0%;    
-    background-size: auto;
 }
-/*so far the background is now responsive but need to work on text*/
 
 #welcome {
-
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
     display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     font-size: 10vw;
     color: #72716E;
-    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/*delete? */
-
-.english {
-    display: flex;
-    font-size: 10vw;
-    color: #72716E;
-    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/*delete?*/
-
-.spanish {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top:0px;
-    font-family: futura, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 110px;
-    color: #9AABAC;
-}
-
-#about-me-box-1 {
-    position: absolute;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 0;
-    left: 5rem;
-    top: 30rem;
-    width: 40vw;
-    height: 40vh;
-    background-color: white;
-    border: solid f5f5f5;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3vw;
-    color: #72716E;
-   
 }
-#about-me-box-2 {
+/*need to make sure the padding and margin is the same for all containers, see smaller screens to check */
 
-    position: absolute;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 1;
-    left: 5rem;
-    top: 30rem;
-    width: 40vw;
-    height: 40vh;
-    background-color: white;
-    border: solid f5f5f5;
-    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3vw;
-    color: #72716E;
-}
 
-#about-me-button {
-    border: none;
-    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #72716E;
-    font-size: 1vw;
-    border: solid grey;
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: white;
-    
-}
