@@ -1,14 +1,24 @@
+
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0%;
+    margin: 0%;
+    overflow: auto;
 }
 
 .container {
     display: grid;
+    position: absolute;
     height: 100vh;
     width: 100vw;
-    grid-template-rows: auto 20% 20% 20% 20% auto;
+    grid-template-rows: repeat (6, minmax(20%, auto));
     grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-device-width: 480px) {
+/*fill this in! */
+/*make the padding smaller for smaller screens */
+/* made the button icons smaller */
+
 }
 
 .grid-item-background-1{
@@ -17,13 +27,11 @@ body {
     grid-column: 2 / 3;
 }
 
-
 .grid-item-background-3 {
     background-color: #94C9C9; 
     grid-row: 3 / 4;
     grid-column: 2 / 3;  
 }
-
 .grid-item-background-4 {
     background-color: #94C9C9; 
     grid-row: 4 / 5;
@@ -45,14 +53,20 @@ body {
 .header-left {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 
 }
 .header-right {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
-    justify-content: center;
-    right: 3rem;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin: 0.5rem;
   
 
 }
@@ -78,7 +92,30 @@ body {
     font-size: 10vw;
     color: #72716E;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
 }
 /*need to make sure the padding and margin is the same for all containers, see smaller screens to check */
 
 
+#about-me-heading {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    display: flex;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: #72716E;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#about-me {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    display: flex;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    color: #72716E;
+    padding: 1rem;
+    margin: 1rem;
+}
