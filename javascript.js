@@ -10,13 +10,13 @@ function languageClick() {
     languageButton[0]["innerText"] = "EN";
 
     var english = document.getElementsByClassName("english");
-    english[0]["innerText"] = "BIENVENIDA";
+    english[0]["innerText"] = "ROSIE O'DONNELL";
     english[1]["innerText"] = "Acerca de mí";
     english[2]["innerText"] = "Aqui estara la traduccion";
     
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
-        english[0]["innerText"] = "WELCOME";
+        english[0]["innerText"] = "ROSIE O'DONNELL";
         english[1]["innerText"] = "About Me";
         english[2]["innerText"] = "This section is going to tell you all about me and why I am applying for this course.";
     
