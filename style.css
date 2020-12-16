@@ -7,18 +7,11 @@ body {
 
 .container {
     display: grid;
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
     grid-template-rows: repeat (6, minmax(20%, auto));
     grid-template-columns: 1fr 1fr;
-}
-
-@media only screen and (max-device-width: 480px) {
-/*fill this in! */
-/*make the padding smaller for smaller screens */
-/* made the button icons smaller */
-
 }
 
 .grid-item-background-1{
@@ -68,14 +61,14 @@ body {
 #language-button {
     display: flex;
     background-color:#94C9C9;
-    border: white solid;
+    border: none;
     outline: 0;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: 1.5vw;
 }
 
-#welcome {
+#my-name {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
     display: flex;
@@ -139,7 +132,7 @@ body {
     justify-content: center;
     align-items: center;
 
-/* ADD IN MEDIA QUERY FOR IMAGE */
+
 }
 
 #contact-me {
@@ -155,3 +148,151 @@ body {
     color: #72716E;
 }
 
+ /* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow: auto;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: minmax(5%, auto) minmax(22.5%, auto) minmax(22.5%, auto) minmax(22.5%, auto) minmax(22.5%, auto) minmax(5%, auto);
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-left {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 1rem;
+
+}
+
+.header-right {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #94C9C9;  
+    height: 1rem;
+
+}
+
+#language-button {
+    display: flex;
+    background-color:#94C9C9;
+    border: none;
+    outline: 0;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1.5vw;
+}
+
+#my-name {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
+    font-size: 6vw;
+    color: #72716E;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.me {
+    background-color: #94C9C9; 
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: #72716E;
+    padding: 1rem;
+}
+
+#about-me-heading {
+
+    grid-row: 3 / span 1;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: #72716E;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+
+
+#about-me {
+    grid-row: 3 / span 1;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: #72716E;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#my-skills {
+    background-color: #94C9C9; 
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: #72716E;
+    padding: 1rem;
+    
+}
+
+
+.grid-item-background-5 {
+    background-color: #94C9C9; 
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;  
+}
+
+.grid-item-background-6 {
+    background-color: #94C9C9; 
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;  
+}
+
+/*fill this in! */
+/*make the padding smaller for smaller screens */
+/* made the button icons smaller */
+
+
+
+}
