@@ -82,8 +82,13 @@ body {
 }
 /*need to make sure the padding and margin is the same for all containers, see smaller screens to check */
 
+#me {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
 
 #about-me-heading {
+    position: absolute;
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
     display: flex;
@@ -92,9 +97,13 @@ body {
     color: #72716E;
     padding: 1rem;
     margin: 1rem;
+    width: 20vw;
+    height: 20vh;
+    z-index: 0;
 }
 
 #about-me {
+    position: absolute;
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
     display: flex;
@@ -103,6 +112,9 @@ body {
     color: #72716E;
     padding: 1rem;
     margin: 1rem;
+    z-index: 1;
+    width: 20vw;
+    height: 20vh;
 }
 
 #my-skills {
@@ -110,8 +122,8 @@ body {
     grid-row: 4 / 5;
     grid-column: 2 / 3;  
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
     color: #72716E;
@@ -119,20 +131,25 @@ body {
     
 }
 
+#skills-grid {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+    background-color: #94C9C9; 
+
+}
 #image-carousel {
     grid-row: 5 / 6;
     grid-column: 1 / span 1;
-    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
-    color: #72716E;
-    padding-left: 1rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+}
 
+.image {
+    height: 20vh;
+    width: 40vw;
 }
 
 #contact-me {
@@ -144,7 +161,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
+    font-size: 1rem;
     color: #72716E;
 }
 
@@ -155,8 +172,7 @@ body {
 
 
 body {
-    padding: 0%;
-    margin: 0%;
+    
     overflow: auto;
     position: relative;
 }
@@ -223,8 +239,10 @@ body {
     grid-row: 3 / 4;
     grid-column: 1 / 3;  
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
@@ -237,8 +255,7 @@ body {
     grid-row: 3 / span 1;
     grid-column: 1 / 3;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
     color: #72716E;
@@ -252,8 +269,7 @@ body {
     grid-row: 3 / span 1;
     grid-column: 1 / 3;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1vw;
     color: #72716E;
@@ -275,7 +291,6 @@ body {
     padding: 1rem;
     
 }
-
 
 .grid-item-background-5 {
     background-color: #94C9C9; 
