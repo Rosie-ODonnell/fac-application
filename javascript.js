@@ -12,16 +12,18 @@ function languageClick() {
     var english = document.getElementsByClassName("english");
     english[0]["innerText"] = "ROSIE O'DONNELL";
     english[1]["innerText"] = "Acerca de mí";
-    english[2]["innerText"] = "Aquí estara la traduccion";
+    //english[2]["innerText"] = "Aquí estara la traduccion";
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
         english[0]["innerText"] = "ROSIE O'DONNELL";
         english[1]["innerText"] = "About Me";
-        english[2]["innerText"] = "This section is going to tell you all about me and why I am applying for this course.";
+        //english[2]["innerText"] = "This section is going to tell you all about me and why I am applying for this course.";
     
     };
 }
+
+// add in this function, if AboutMeTest == null - add in translation or don't
 
 //ABOUT ME FUNCTION:
 
@@ -32,11 +34,11 @@ function popUp(){
     const newContent = document.createTextNode("This section is going to tell you all about me and why I am applying for this course.");
     newDiv.appendChild(newContent);
     newDiv.id = "about-me";
-    newDiv.className = "english-div";
+    newDiv.className = "english";
     const currentDiv = document.getElementById("about-me-heading");
     const insert = document.getElementById("me");
     if (aboutMeTest == null) {
-    insert.insertBefore(newDiv, currentDiv); //(what I want, what I have: anchor)
+    insert.insertBefore(newDiv, null); //(what I want, what I have: anchor) //change this back to currentDiv
     }
     else {
         var removeEl = document.getElementById("about-me");
