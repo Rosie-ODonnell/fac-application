@@ -10,7 +10,7 @@ function languageClick() {
     languageButton[0]["innerText"] = "EN";
 
     var english = document.getElementsByClassName("english");
-    english[0]["innerText"] = "ROSIE O'DONNELL";
+    english[0]["innerText"] = "HOLA! \n SOY ROSIE! \n BIENVENIDA A MI APLICACION!";
     english[1]["innerText"] = "Acerca de mí";
     english[2]["innerText"] = "Hazme click";
     //english[2]["innerText"] = "Aquí estara la traduccion";
@@ -23,7 +23,7 @@ function languageClick() {
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
-        english[0]["innerText"] = "ROSIE O'DONNELL";
+        english[0]["innerText"] = "HEY! \n I'M ROSIE! \n WELCOME TO MY APPLICATION!";
         english[1]["innerText"] = "About Me";
         english[2]["innerText"] = "Click me";
         //english[2]["innerText"] = "This section is going to tell you all about me and why I am applying for this course.";
@@ -32,7 +32,7 @@ function languageClick() {
    
 }
 
-// add in this function, if AboutMeTest == null - add in translation or don't
+// add in this function, if AboutMeTest == null - add in translation or don't - THIS IS NECESSARY - DO THIS!
 
 //ABOUT ME FUNCTION:
 
@@ -40,12 +40,12 @@ function popUp(){
     var aboutMeTest = document.getElementById("about-me");
     console.log(aboutMeTest);
     const newDiv = document.createElement("div"); //tag type anchor
-    const newContent = document.createTextNode("This section is going to tell you all about me and why I am applying for this course.");
+    const newContent = document.createTextNode(" I 💕 food!  My two favourite chefs are Meera Sodha (check out her vegan column here) and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, Cook, Eat, Repeat. Try these Ruby Noodles… they won’t disappoint! \n I love water. My order of preference for swimming destinations are: \n The sea > a big lake > a river > a stream > a bath (alright, just for a soak) \n  If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter)  \n  … not this Winter though! This year’s changed things a bit and I’ve ditched my goggles for pedals. I’m still at stage ‘all the gear, no idea’. \n I love languages - When I was 23, I moved to Spain to learn Spanish. I didn’t know much when I went, but now I’m fluent! \n   I’m passionate about homelessness. I currently work as a caseworker for a homeless charity, and have been volunteering within the sector for the last 7 years. Now, I want to harness my ability to my a broader social impact. ");
     const newContentSpanish = document.createTextNode("aqui estara la traduccion");
 
     // Getting the translation button to work:
     const spanishTest = document.getElementById("about-me-heading");
-    if (spanishTest["innerText"] == "About Me") {
+    if (spanishTest["innerText"] == "HERE WILL BE AN A NICE PIC") {
     newDiv.appendChild(newContent);
     } else {
         newDiv.appendChild(newContentSpanish);
@@ -64,7 +64,7 @@ function popUp(){
         //insert.removeChild(newDiv);
     }
 }
-
+//THERE IS AN ISSUE UP HERE THAT ONCE IT HAS TRANSLATED TO SPANISH IT DOESN'T GO BACK. I THINK I NEED TO FIX THIS IN THE TRANSLATION FUNCTION
 
 //MY SKILLS FUNCTION:
 

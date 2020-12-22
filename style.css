@@ -18,6 +18,7 @@ body {
     background-color: #94C9C9; 
     grid-row: 3 / 4;
     grid-column: 2 / 3;  
+    height: 50vh;
 }
 
 .grid-item-background-2 {
@@ -75,11 +76,16 @@ body {
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
-    font-size: 6vw;
+    font-size: 7vw;
     color: #72716E;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 3rem;
     padding-bottom: 8rem;
+    padding-left: 0.5rem;
+}
+
+#my-name:hover {
+    color: #E3016a;
 }
 /*need to make sure the padding and margin is the same for all containers, see smaller screens to check */
 
@@ -118,13 +124,14 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     z-index: 1;
-    width: 20vw;
-    height: 40vh;
+    width: 45vw;
+    height: 50vh;
     background-color: white;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: #72716E;
     padding-left: 0.5rem;
+    overflow: auto;
 
 }
 
