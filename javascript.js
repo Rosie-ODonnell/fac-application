@@ -10,7 +10,7 @@ function languageClick() {
     languageButton[0]["innerText"] = "EN";
 
     var english = document.getElementsByClassName("english");
-    english[0]["innerText"] = "HOLA! \n SOY ROSIE! \n BIENVENIDA A MI APLICACION!";
+    english[0]["innerText"] = "HOLA! \n SOY ROSIE. \n BIENVENIDA A MI APLICACION.";
     english[1]["innerText"] = "Acerca de mí";
     english[2]["innerText"] = "Hazme click";
     //english[2]["innerText"] = "Aquí estara la traduccion";
@@ -23,7 +23,7 @@ function languageClick() {
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
-        english[0]["innerText"] = "HEY! \n I'M ROSIE! \n WELCOME TO MY APPLICATION!";
+        english[0]["innerText"] = "HEY! \n I'M ROSIE. \n WELCOME TO MY APPLICATION.";
         english[1]["innerText"] = "About Me";
         english[2]["innerText"] = "Click me";
         //english[2]["innerText"] = "This section is going to tell you all about me and why I am applying for this course.";
