@@ -73,20 +73,23 @@ function popUp2() {
     const img = document.createElement("img");
     img.src = "javascript.png";
     img.id = "icon-1";
+    img.alt = "Javascript"
     var currentDiv2 = document.getElementById("test");
-    var insert2 = document.getElementById("my-skills");
+    var insert2 = document.getElementById("my-skills-input");
 
 
     var iconTest2 = document.getElementById("icon-2")
     var img2 = document.createElement("img");
     img2.src = "css3.png";
     img2.id = "icon-2";
+    img2.alt = "CSS 3"
     
 
     var iconTest3 = document.getElementById("icon-3")
     var img3 = document.createElement("img");
     img3.src = "html5.png";
     img3.id = "icon-3";
+    img3.alt = "HTML 5"
    
     // add in the other elements here
 
