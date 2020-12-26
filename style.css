@@ -198,6 +198,7 @@ body {
     justify-content: flex-start;
     height: 50vh;
     width: 50vw;
+    z-index: 1;
 }
 
 
@@ -336,6 +337,11 @@ ul{
 #icon-3 {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
+}
+
+#icon-4 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
 }
 
 

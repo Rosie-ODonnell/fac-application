@@ -43,7 +43,7 @@ function popUp(){
     var aboutMeTest = document.getElementById("about-me");
     console.log(aboutMeTest);
     const newDiv = document.createElement("div"); //tag type anchor
-    const newContent = document.createTextNode(" I 💕 food!  My two favourite chefs are Meera Sodha (check out her vegan column here) and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, Cook, Eat, Repeat. Try these Ruby Noodles… they won’t disappoint! \n I love water. My order of preference for swimming destinations are: \n A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak) \n  If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter)  \n  … not this Winter though! This year’s changed things a bit and I’ve ditched my goggles for pedals. I’m still at stage ‘all the gear, no idea’. \n I love dramatic sunsets and sunrises (you'll find some of the best I've seen at the bottom of this page).\n I love languages - When I was 23, I moved to Spain to learn Spanish. I didn’t know much when I went, but now I’m fluent! \n   I’m passionate about ending homelessness. I currently work as a caseworker for a homeless charity, and have been volunteering within the sector for the last 7 years. Now, I want to harness my capability to make a broader social impact. ");
+    const newContent = document.createTextNode("I 💕 food!  My two favourite chefs are Meera Sodha (check out her vegan column here) and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, Cook, Eat, Repeat. Try these Ruby Noodles… they won’t disappoint! \n I love water. My order of preference for swimming destinations are: \n A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak) \n  If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter)  \n  … not this Winter though! This year’s changed things a bit and I’ve ditched my goggles for pedals. I’m still at stage ‘all the gear, no idea’. \n I love dramatic sunsets and sunrises (you'll find some of the best I've seen at the bottom of this page).\n I love languages - When I was 23, I moved to Spain to learn Spanish. I didn’t know much when I went, but now I’m fluent! \n   I’m passionate about ending homelessness. I currently work as a caseworker for a homeless charity, and have been volunteering within the sector for the last 7 years. Now, I want to harness my capability to make a broader social impact. ");
     const newContentSpanish = document.createTextNode("¡Me encanta la comida! Mis dos chefs favoritos son Meera Sodha (echa un vistazo a su columna vegana aquí) y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, Cook, Eat, Repeat. Prueba estos garabatos de rubí... ¡no decepcionarán! Me encanta el agua. Mi orden de preferencia por los destinos de natación es");
     // newDiv.appendChild(newContent);
     // Getting the translation button to work:
@@ -92,13 +92,22 @@ function popUp2() {
     img3.id = "icon-3";
     img3.alt = "HTML 5";
    
+
+    var iconTest4 = document.getElementById("icon-4")
+    var img4 = document.createElement("img");
+    img4.src = "VS-Code.png";
+    img4.id = "icon-4";
+    img4.alt = "VS Code";
+   
+
     // add in the other elements here
 
 
-if (iconTest == null && iconTest2 == null && iconTest3 == null) {
+if (iconTest == null && iconTest2 == null && iconTest3 == null && iconTest4 == null) {
     insert2.insertBefore(img, null); 
     insert2.insertBefore(img2, null); 
     insert2.insertBefore(img3, null); 
+    insert2.insertBefore(img4, null)
     
     }
     else {
@@ -108,6 +117,8 @@ if (iconTest == null && iconTest2 == null && iconTest3 == null) {
         removeEl2.remove();
         var removeEl3 = document.getElementById("icon-3");
         removeEl3.remove();
+        var removeEl4 = document.getElementById("icon-4");
+        removeEl4.remove();
     }
 
 }
