@@ -97,7 +97,7 @@ function popUp2() {
     var img4 = document.createElement("img");
     img4.src = "VS-Code.png";
     img4.id = "icon-4";
-    img4.alt = "VS Code";
+    img4.alt = "Visual Studio Code";
    
 
     // add in the other elements here
