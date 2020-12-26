@@ -27,6 +27,14 @@ body {
     grid-column: 2 / 3;  
 }
 
+.grid-item-background-3 {
+    background-color: #94C9C9; 
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;  
+    z-index: 0;
+}
+
+
 .header-left {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -87,7 +95,6 @@ body {
 #welcome {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
-    display: block;
     justify-content: center;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     font-size: 7vw;
@@ -96,7 +103,7 @@ body {
     padding-top: 3rem;
     padding-bottom: 4rem;
     padding-left: 0.5rem;
-    /*animation-name: pink-change;
+    /* animation-name: pink-change;
     animation-duration: 15s;
     animation-iteration-count:infinite; */
 }
@@ -123,6 +130,7 @@ body {
     width: 100vw;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     padding-top:2rem;
+
 
 }
 
@@ -182,16 +190,26 @@ body {
 }
 
 
-#why-fac{
-    grid-row: 4 / 5;
-    grid-column: 2 / 3; 
-    background:#94C9C9 50%;
-    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
-    color: #72716E; 
-    height: 100vh;
+.images {
+    grid-row: 6 / 7;
+    grid-column: 2/ 3; 
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    height: 50vh;
     width: 50vw;
 }
+
+
+.image {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    height: 50%;
+    width: 25%;
+    margin: 4rem;
+    border-radius: 50%
+}
+
 
 #why-fac-title {
     grid-row: 4 / 5;
@@ -207,15 +225,25 @@ body {
 
 }
 
-ul{
+#why-fac{
     grid-row: 4 / 5;
     grid-column: 2 / 3; 
-    list-style-type: square;
+    background:#94C9C9 50%;
+    font-size: 2vw;
+    color: #72716E; 
+    height: 100vh;
+    width: 50vw;
+
+}
+
+#typewriter {
+    
     overflow: hidden;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end);
+    letter-spacing: .10em;
+    animation: typing 3.5s steps(54, end);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes typing {
@@ -227,12 +255,11 @@ ul{
   #my-skills{
     grid-row: 5 / 6;
     grid-column: 1 / 2; 
-    height: 100vw;
+    height: 60vw;
     width: 50vw;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
     color: #72716E;
-    padding-left: 0.5rem;
     
 }
 
@@ -260,6 +287,13 @@ ul{
     align-items: flex-start;
 }
 
+ul{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3; 
+    list-style-type: none;
+
+}
+
 #skills-button {
     border: none;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -268,6 +302,7 @@ ul{
     margin: 2rem;
     border: solid grey;
     transform: scale (1);
+
 }
 
 #skills-button:hover {
@@ -289,7 +324,9 @@ ul{
 #icon-1 {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+   
 }
+
 
 #icon-2 {
     grid-row: 2 / 3;
@@ -301,21 +338,9 @@ ul{
     grid-column: 4 / 5;
 }
 
-#image-carousel {
-
-    grid-row: 6 / 7;
-    grid-column: 1 / span 2;
-    background:linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
-
-}
-
-.image {
-    height: 40vh;
-    width: 40vw;
-}
 
 #contact-me {
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
     grid-column: 1 / span 2;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     padding-left: 1rem;
@@ -384,7 +409,7 @@ body {
 #welcome {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
@@ -433,7 +458,7 @@ body {
     color: #72716E;
     padding: 0.5rem;
     margin: 0.5rem;
-    width: 50vw;
+    width: 40vw;
     height: 50vh;
 }
 
@@ -456,9 +481,6 @@ body {
 
 }
 
-ul{
-    list-style-type: square;
-}
 
 #my-skills{
     grid-row: 5 / 6;
@@ -492,7 +514,7 @@ ul{
 }
 
 
-
+/*
 .image {
     padding-top: 1rem;
     padding-left: 1rem;
@@ -506,7 +528,7 @@ ul{
 /* made the button icons smaller */
 
 #contact-me {
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
     grid-column: 1 / span 2;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     padding-left: 1rem;
