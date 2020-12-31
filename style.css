@@ -34,7 +34,6 @@ body {
     z-index: 0;
 }
 
-
 .header-left {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -85,6 +84,7 @@ body {
     margin: 1rem;
     height: 3.5rem;
     width: 3.5rem;
+    box-shadow: 6px 6px 6px #72716E;
 
 }
 
@@ -110,7 +110,7 @@ body {
 @keyframes pink-change {
     0% { color:#72716E; }
   50% { color: #E3016a; }
-  100% { color: #72716E; }
+    100% { color: #72716E; } 
   }
 
 
@@ -161,7 +161,7 @@ body {
     justify-content: flex-start;
     z-index: 1;
     width: 45vw;
-    height: 50vh;
+    height: 80vh;
     background-color: white;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5vw;
@@ -189,12 +189,22 @@ body {
 }
 
 
-.images {
-    grid-row: 6 / 7;
-    grid-column: 2/ 3; 
+#down-button-3{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
     display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 49vw;
+}
+
+
+.images {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3; 
+    position: absolute;
+    bottom: 3rem;
     height: 50vh;
     width: 50vw;
     z-index: 1;
@@ -202,12 +212,11 @@ body {
 
 
 .image {
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
     height: 50%;
     width: 25%;
     margin: 4rem;
-    border-radius: 50%
+    border-radius: 50%;
+    z-index: 1;
 }
 
 
@@ -236,21 +245,22 @@ body {
 
 }
 
-#typewriter {
-    
-    overflow: hidden;
-    
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em;
-    animation: typing 3.5s steps(54, end);
-    font-family: 'Courier New', Courier, monospace;
+#why-programming {
+    font-size: 1.2vw;
+    color: #72716E; 
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
 
+#down-button-4{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    left: 49vw;
+}
 
   #my-skills{
     grid-row: 5 / 6;
@@ -270,7 +280,6 @@ body {
     align-items: flex-start;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-right: 0.5rem;
-    padding: 1rem;
     color: #72716E;
     height: 50px;
     
@@ -300,7 +309,9 @@ ul{
     font-size: 2vw;
     outline: 0;
     margin: 2rem;
-    border: solid grey;
+    border: solid #E3016a;
+    background: white;
+    color: #72716E;
     transform: scale (1);
 
 }
@@ -355,6 +366,14 @@ ul{
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     color: #72716E;
+}
+
+#twitter {
+    transform: scale (1);
+}
+#twitter:hover {
+    transform: scale (1.5);
+    opacity: 50%;
 }
 
  /* MEDIA QUERIES */
