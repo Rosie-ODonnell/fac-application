@@ -72,7 +72,6 @@ body {
     display: flex;
     background-color:#94C9C9;
     border: solid white;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5%;
@@ -113,6 +112,52 @@ body {
     100% { color: #72716E; } 
   }
 
+  #navigation-buttons {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  }
+
+.nav {
+    display: flex;
+    background-color:#94C9C9;
+    border: solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    outline: 0;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1vw;
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 6px 6px 6px #72716E;
+    padding: 0.5rem;
+}
+
+  #navigation-button-1 {
+    grid-row: 3 / span 1;
+    grid-column: 8 / span 1;
+    
+  }
+
+  #navigation-button-2 {
+    grid-row: 4 / span 1;
+    grid-column: 8 / span 1;
+    
+  }
+
+  #navigation-button-3 {
+    grid-row: 5 / span 1;
+    grid-column: 8 / span 1;
+    
+  }
+
+  .nav:hover {
+      opacity: 50%;
+  }
 
 #down-button{
     grid-row: 2 / span 1;
@@ -135,7 +180,7 @@ body {
 #about-me-title {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    font-size: 4vw;
+    font-size: 3vw;
     display: flex;
     justify-content: flex-start;
     padding-left: 0.5rem;
@@ -155,7 +200,7 @@ body {
     z-index: 0;
     background-color:white;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
+    font-size: 1.2vw;
     color: #72716E;
     padding-left: 0.5rem;
     padding-top: 2rem;
@@ -175,10 +220,10 @@ body {
     justify-content: flex-start;
     z-index: 1;
     width: 45vw;
-    height: 80vh;
+    height: 50vh;
     background-color: white;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #72716E;
     padding-left: 0.5rem;
     overflow: auto;
@@ -188,18 +233,70 @@ body {
 #about-me-button {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    border: none;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #72716E;
+    color: white;
     font-size: 1vw;
-    border: none;
-    outline: 0;
-    background-color: white;
-    padding-left: 2rem;
     position: relative;
-    bottom: 1rem;
+    top: 30rem;
+    left: 25rem;
+    border: none;
+    outline: none;
+    background:#E3016a; 
+    color: white;
+    transform: scale (1);
+    box-shadow: 6px 6px 6px #72716E;  
+    height: 3rem;
+
 }
 
+#about-me-button:hover {
+    opacity: 50%;
+    transform: scale (1.5);
+}
+
+#photo-button {
+
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1vw;
+    position: relative;
+    top: 30rem;
+    left: 30rem;
+    border: none;
+    outline: none;
+    background:#E3016a; 
+    color: white;
+    transform: scale (1);
+    box-shadow: 6px 6px 6px #72716E;  
+    height: 3rem;
+}
+
+#photo-button:hover {
+    opacity: 0.5;
+    transform: scale (1.5);
+}
+
+#my-images-input {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1; 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1;
+
+}
+
+#Australia {
+    grid-row: 2 / 3;
+    grid-column: 2 / span 2;
+    height: 25%;
+    width: 40%;
+    border-radius: 50%;
+    z-index: 1;
+
+}
 
 #down-button-3{
     grid-row: 3 / span 1;
@@ -219,9 +316,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-family: yellowtail, futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    animation-name: pink-change;
-    animation-duration: 15s;
-    animation-iteration-count:infinite;
+    color: #E3016a;
     padding-right: 0.5rem;
 
 }
@@ -257,7 +352,7 @@ body {
   #my-skills{
     grid-row: 5 / 6;
     grid-column: 1 / 2; 
-    height: 60vh;
+    height: 95vh;
     width: 50vw;
     font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
@@ -270,20 +365,18 @@ body {
     font-size: 3vw;
     display: flex;
     align-items: flex-start;
-    font-family: futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: yellowtail, futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    color: #72716E;
+    color:#E3016a ;
     height: 50px;
     
 }
 
 #skills-subtitle {
     font-family: yellowtail, futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3vw;
-    animation-name: pink-change;
-    animation-duration: 15s;
-    animation-iteration-count:infinite;
+    font-size: 2vw;
+    color: #72716E;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -295,7 +388,7 @@ ul{
     grid-column: 2 / 3; 
     list-style-type: none;
     padding-left: 0.5rem;
-    font-size: 1vw;
+    font-size: 1.2vw;
 
 }
 
@@ -353,24 +446,6 @@ ul{
 }
 
 
-.images {
-    grid-row: 6 / 7;
-    grid-column: 1 / span 1; 
-    bottom: 3rem;
-    height: 50vh;
-    width: 50vw;
-    z-index: 1;
-   
-}
-
-
-.image {
-    height: 50%;
-    width: 25%;
-    margin: 4rem;
-    border-radius: 50%;
-    z-index: 1;
-}
 
 #contact-me {
     grid-row: 7 / 8;

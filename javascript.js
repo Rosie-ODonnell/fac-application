@@ -128,4 +128,27 @@ const skills = document.getElementById("skills-button");
 skills.onclick = popUp2;
 
 
+function photoPopUp() {
+
+
+    var photoTest = document.getElementById("Australia");
+    const photo = document.createElement("img");
+    photo.src = "Australia.png";
+    photo.id = "Australia";
+    photo.className = "images";
+    photo.alt = "Sunset over sea in Australia";
+    var photoInsert = document.getElementById("my-images-input");
+
+    if (photoTest == null) {
+        photoInsert.insertBefore(photo, null);
+    }
+    else {
+        var removeElement = document.getElementById("Australia");
+        removeElement.remove();
+    }
+   
+}
+
+const photos = document.getElementById("photo-button");
+photos.onclick = photoPopUp;
 
