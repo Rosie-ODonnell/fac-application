@@ -120,6 +120,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   }
 
+a {
+    color: white;
+}
+
 .nav {
     display: flex;
     background-color:#94C9C9;
@@ -135,6 +139,8 @@ body {
     width: 3rem;
     box-shadow: 6px 6px 6px #72716E;
     padding: 0.5rem;
+    margin-left: 0.5rem;
+    
 }
 
   #navigation-button-1 {

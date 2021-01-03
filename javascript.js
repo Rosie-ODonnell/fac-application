@@ -11,15 +11,48 @@ function languageClick() {
 
     var english = document.getElementsByClassName("english");
     english[0]["innerText"] = "HOLA! \n SOY ROSIE. \n BIENVENIDO A MI SOLICITUD.";
-    english[1]["innerText"] = "Acerca de mí";
-    english[2]["innerText"] = "Hazme click";
+    english[1]["innerText"] = "ACERCA DE MÍ";
+    english[2]["innerText"] = "¿POR QUÉ FAC?";
+    english[3]["innerText"] = "¿POR QUÉ YO?";
+    english[4]["innerText"] = "acerca de mí";
+    english[5]["innerText"] = "aquí estará la traducción";
+    english[6]["innerText"] = "Haz click para más";
+    english[7]["innerText"] = "Algunas fotos";
+    english[8]["innerText"] = "¿por qué programar?";
+    english[9]["innerText"] = "¡la tecnología es emocionante! Y con la velocidad en la que cambia el mundo, quiero ser una de las fuerzas motrices";
+    english[10]["innerText"] = "La programación tiene el potencial de ser utilizada para tanto bien, y como el software de código bajo y sin código aumenta en popularidad, quiero estar por delante de la curva para que pueda trabajar en una codificación más compleja para crear sistemas y productos que mejoren la vida de las personas.";
+    english[11]["innerText"] = "La perspectiva del aprendizaje permanente es también un gran atractivo para la carrera. Me encanta la creatividad de la codificación y los constantes desafíos que conlleva - me deshago de esa sensación después de horas codificando cuando mi cerebro está gimiendo y no puedo continuar: Lo único que quiero hacer es ir a la cama y despertar con la cabeza clara para continuar.";
+    english[12]["innerText"] = "I also like the flexibility and opportunities that being a developer offers. There’s not a medium or industry I can think of that doesn’t require technology in some form, which offers developers a unique route to moving between industries whilst constantly developing your skills.";
+    english[13]["innerText"] = "Con la programación, siempre hay más que construir y más que aprender. Y también hay precaución que tener. Es importante analizar críticamente la velocidad a la que la tecnología reforma las industrias y el impacto que esto tiene. A menudo me pregunto si suficientes personas que trabajan en tecnología son constructivamente críticas de sus propios poderes; creo que más gente debería ser. Me encantaría trabajar en tecnología porque me asombra y aterroriza igualmente.";
+    english[14]["innerText"] = "¿qué llevaré a la cohorte?";
+    english[15]["innerText"] = "Tengo experiencia en la enseñanza, que sé por mi viaje de codificación hasta ahora es una habilidad valiosa. Los nuevos estudiantes son los mejores profesores para otros nuevos estudiantes, y también tengo la paciencia requerida...";
+    english[16]["innerText"] = "Solución de problemas: mi trabajo actual requiere que resuelva problemas sobre el terreno y trabaje con nuevos casos todos los días.";
+    english[17]["innerText"] = "aquí estará la tercero asunto";
+    english[18]["innerText"] = "HABILIDADES TÉCNICAS";
+    english[19]["innerText"] = "Encuéntrame en"
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
         english[0]["innerText"] = "HEY! \n I'M ROSIE. \n WELCOME TO MY APPLICATION.";
-        english[1]["innerText"] = "I'm a self-taught developer, applying to Founders and Coders Spring 2021 cohort to turn my dream of being a professional programmer into a reality! I've been coding for around 9 months and I love it! In fact, I’d go so far to say I’m obsessed, which I think is a pretty cool way to start a career.<br> But before I tell you why I'm applying for FAC I'd like to tell you a little bit about my non-computing side...";
-        english[2]["innerText"] = "Click me";
-
+        english[1]["innerText"] = "ABOUT ME";
+        english[2]["innerText"] = "WHY FAC?";
+        english[3]["innerText"] = "WHY ME?";
+        english[4]["innerText"] = "about me";
+        english[5]["innerText"] = "I'm a self-taught developer, applying to Founders and Coders Spring 2021 cohort to turn my dream of being a professional programmer into a reality! I've been coding for around 9 months and I love it! In fact, I’d go so far to say I’m obsessed, which I think is a pretty cool way to start a career. <br> But before I tell you why I'm applying for FAC I'd like to tell you a little bit about my non-computing side...";
+        english[6]["innerText"] = "Click for more";
+        english[7]["innerText"] = "Some snaps";
+        english[8]["innerText"] = "why programming?";
+        english[9]["innerText"] = "Technology is exciting! And with the speed its changing the world at, I want to be one of the driving forces.";
+        english[10]["innerText"] = "Programming has the potential to be used for so much good, and as low-code and no-code software increases in popularity, I want to be ahead of the curve so that I can work on more complex coding to create systems and products that make people’s lives better.";
+        english[11]["innerText"] = "The prospect of life-long learning is also a big draw to the career. I love the creativity of coding and the constant challenges it brings - I thrive off that feeling after hours coding when my brain is groggy and I can’t continue: the only thing I want to do is go to bed and wake up clear-headed to continue.";
+        english[12]["innerText"] = "I also like the flexibility and opportunities that being a developer offers. There’s not a medium or industry I can think of that doesn’t require technology in some form, which offers developers a unique route to moving between industries whilst constantly developing your skills.";
+        english[13]["innerText"] = "With programming, there is always more to build and more to learn. And there is also caution to be had. It’s important to look critically at the rate at which technology reshapes industries and the impact this has. I often wonder if enough people working in tech are constructively critical of its own powers; I think more people should be.  I would love to work in technology because it equally amazes and terrifies me.";
+        english[14]["innerText"] = "what I'll bring to the cohort";
+        english[15]["innerText"] = "I have teaching experience, which I know from my coding journey so far is a valuable skill. New learners are the best teachers for other new learners, and I also have the patience required...";
+        english[16]["innerText"] = "Problem-solving: my current work requires me to problem solve on the spot, and work with new cases every day.";
+        english[17]["innerText"] = "Here will be the third point";
+        english[18]["innerText"] = "TECHNICAL SKILLS";
+        english[19]["innerText"] = "Find me on";
     };
 
     //this will translate the About Me texted if it is already open:
@@ -48,7 +81,7 @@ function popUp(){
     // newDiv.appendChild(newContent);
     // Getting the translation button to work:
     const spanishTest = document.getElementById("about-me-heading");
-    if (spanishTest["innerText"] == "Acerca de mí") {
+    if (spanishTest["innerText"] == "aquí estará la traducción") {
         newDiv.appendChild(newContentSpanish);
     } else {
         newDiv.appendChild(newContent);
@@ -125,7 +158,7 @@ if (iconTest == null && iconTest2 == null && iconTest3 == null && iconTest4 == n
 
 }
 const skills = document.getElementById("skills-button");
-skills.onclick = popUp2;
+skills.addEventListener('click', popUp2);
 
 
 function photoPopUp() {
