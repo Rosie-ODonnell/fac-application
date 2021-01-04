@@ -10,14 +10,14 @@ function languageClick() {
     languageButton[0]["innerText"] = "EN";
 
     var english = document.getElementsByClassName("english");
-    english[0]["innerText"] = "HOLA! \n SOY ROSIE. \n BIENVENIDO A MI SOLICITUD.";
-    english[1]["innerText"] = "ACERCA DE MÍ";
-    english[2]["innerText"] = "¿POR QUÉ FAC?";
-    english[3]["innerText"] = "¿POR QUÉ YO?";
+    english[0]["innerText"] = "ACERCA DE MÍ";
+    english[1]["innerText"] = "¿POR QUÉ FAC?";
+    english[2]["innerText"] = "¿POR QUÉ YO?";
+    english[3]["innerText"] = "¡Hola! \n Soy Rosie. \n Bienvenido a mi \n Solicitud.";
     english[4]["innerText"] = "acerca de mí";
     english[5]["innerText"] = "aquí estará la traducción";
     english[6]["innerText"] = "Haz click para más";
-    english[7]["innerText"] = "Algunas fotos";
+    english[7]["innerText"] = "Fotos de mi vida";
     english[8]["innerText"] = "¿por qué programar?";
     english[9]["innerText"] = "¡la tecnología es emocionante! Y con la velocidad en la que cambia el mundo, quiero ser una de las fuerzas motrices";
     english[10]["innerText"] = "La programación tiene el potencial de ser utilizada para tanto bien, y como el software de código bajo y sin código aumenta en popularidad, quiero estar por delante de la curva para que pueda trabajar en una codificación más compleja para crear sistemas y productos que mejoren la vida de las personas.";
@@ -33,14 +33,14 @@ function languageClick() {
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
-        english[0]["innerText"] = "HEY! \n I'M ROSIE. \n WELCOME TO MY APPLICATION.";
-        english[1]["innerText"] = "ABOUT ME";
-        english[2]["innerText"] = "WHY FAC?";
-        english[3]["innerText"] = "WHY ME?";
+        english[0]["innerText"] = "ABOUT ME";
+        english[1]["innerText"] = "WHY FAC?";
+        english[2]["innerText"] = "WHY ME?";
+        english[3]["innerText"] = "Hey! \n I'm Rosie. \n Welcome to my \n application.";
         english[4]["innerText"] = "about me";
         english[5]["innerText"] = "I'm a self-taught developer, applying to Founders and Coders Spring 2021 cohort to turn my dream of being a professional programmer into a reality! I've been coding for around 9 months and I love it! In fact, I’d go so far to say I’m obsessed, which I think is a pretty cool way to start a career. <br> But before I tell you why I'm applying for FAC I'd like to tell you a little bit about my non-computing side...";
         english[6]["innerText"] = "Click for more";
-        english[7]["innerText"] = "Some snaps";
+        english[7]["innerText"] = "My life in snaps";
         english[8]["innerText"] = "why programming?";
         english[9]["innerText"] = "Technology is exciting! And with the speed its changing the world at, I want to be one of the driving forces.";
         english[10]["innerText"] = "Programming has the potential to be used for so much good, and as low-code and no-code software increases in popularity, I want to be ahead of the curve so that I can work on more complex coding to create systems and products that make people’s lives better.";
@@ -80,7 +80,7 @@ function popUp(){
     const newContentSpanish = document.createTextNode("¡Me encanta la comida! Mis dos chefs favoritos son Meera Sodha (echa un vistazo a su columna vegana aquí) y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, Cook, Eat, Repeat. Prueba estos garabatos de rubí... ¡no decepcionarán! Me encanta el agua. Mi orden de preferencia por los destinos de natación es");
     // newDiv.appendChild(newContent);
     // Getting the translation button to work:
-    const spanishTest = document.getElementById("about-me-heading");
+    const spanishTest = document.getElementById("about-me-intro");
     if (spanishTest["innerText"] == "aquí estará la traducción") {
         newDiv.appendChild(newContentSpanish);
     } else {
@@ -89,10 +89,10 @@ function popUp(){
 
     newDiv.id = "about-me";
     newDiv.className = "englishCreated";
-    const currentDiv = document.getElementById("about-me-heading");
+    const currentDiv = document.getElementById("about-me-button");
     const insert = document.getElementById("me");
     if (aboutMeTest == null) {
-    insert.insertBefore(newDiv, null); //(what I want, what I have: anchor) //change this back to currentDiv
+    insert.insertBefore(newDiv, currentDiv); //(what I want, what I have: anchor) //change this back to currentDiv
     }
     else {
         var removeEl = document.getElementById("about-me");
