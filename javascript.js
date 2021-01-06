@@ -172,15 +172,36 @@ function photoPopUp() {
     photo.src = "Australia.png";
     photo.id = "Australia";
     photo.className = "images";
-    photo.alt = "Sunset over sea in Australia";
+    photo.alt = "Sunset over the sea in Fremantle, Australia";
     var photoInsert = document.getElementById("my-images-input");
 
-    if (photoTest == null) {
+    var photoTest2 = document.getElementById("Cadiz");
+    const photo2 = document.createElement("img");
+    photo2.src = "Cadiz.png";
+    photo2.id = "Cadiz";
+    photo2.className = "images";
+    photo2.alt = "Sunset over the sea in Cadiz, Spain";
+    
+    var photoTest3 = document.getElementById("Noosa");
+    const photo3 = document.createElement("img");
+    photo3.src = "Noosa.png";
+    photo3.id = "Noosa";
+    photo3.className = "images";
+    photo3.alt = "Sunset over the bay in Noosa, Australia";
+
+    if (photoTest == null && photoTest2 == null && photoTest3 == null) {
         photoInsert.insertBefore(photo, null);
+        photoInsert.insertBefore(photo2, null);
+        photoInsert.insertBefore(photo3, null);
     }
     else {
         var removeElement = document.getElementById("Australia");
         removeElement.remove();
+        var removeElement2 = document.getElementById("Cadiz");
+        removeElement2.remove();
+        var removeElement3 = document.getElementById("Noosa");
+        removeElement3.remove();
+
     }
    
 }
