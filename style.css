@@ -128,8 +128,8 @@ a {
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 #welcome-title {
@@ -279,6 +279,7 @@ a {
     color: #72716E; 
     width: 50vw;
     height: 100vh;
+    padding-bottom: 1rem;
     
 }
 
@@ -411,6 +412,7 @@ ul{
     grid-column: 1 / span 2;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
     display: flex;
+    flex-direction: center;
     justify-content: center;
     align-items: center;
     font-family: Geneva, Verdana, Tahoma, sans-serif;
@@ -426,6 +428,7 @@ ul{
     transform: scale (1.5);
     opacity: 50%;
 }
+
 
  /* MEDIA QUERIES */
 
