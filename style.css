@@ -79,6 +79,10 @@ body {
     transform: scale (1.5);
 }
 
+.iconify { 
+    width: 32px; 
+    height: 32px; }
+
 .nav {
     display: flex;
     background-color:#94C9C9;

@@ -97,7 +97,7 @@ function popUp(){
     const insert = document.getElementById("me");
     
     if (aboutMeTest == null) {
-    insert.insertBefore(newDiv, null); //(what I want, what I have: anchor) //change this back to currentDiv
+    insert.insertBefore(newDiv, currentDiv); //(what I want, what I have: anchor) 
     spanishTest.style.display = "none";
     }
     else {
