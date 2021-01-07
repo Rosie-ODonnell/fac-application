@@ -107,6 +107,7 @@ body {
 
 a {
     color: white;
+    font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
 }
 
 #me-nav {
@@ -606,22 +607,22 @@ ul{
     }
 
     #icon-1 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
     }
 
     #icon-2 {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 2 / 3;
     }
 
     #icon-3 {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
     }
 
     #icon-4 {
-    grid-row: 4 / 5;
+    grid-row: 7 / 8;
     grid-column: 2 / 3;
     }
 
