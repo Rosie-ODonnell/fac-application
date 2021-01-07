@@ -2,7 +2,6 @@ body {
     padding: 0%;
     margin: 0%;
     overflow: auto;
-    
 }
 
 .container {
@@ -15,19 +14,32 @@ body {
     /* cursor: url('lgbt.png'), auto; */
 }
 
-.grid-item-background-1 {
-    background-color: #94C9C9; 
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;  
-    height: 50vh;
-    z-index: 0;
+/*delete this: */
+
+#language-button {
+    background-color:#94C9C9;
+    border: solid white;
+    border-radius: 100%;
+    top: 6rem;
+    right: 2rem;
+    outline: 0;
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    box-shadow: 6px 6px 6px #72716E;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.grid-item-background-2 {
-    background-color: #94C9C9; 
-    grid-row: 5 / 6;
-    grid-column: 2 / 3;  
-    z-index: 0;
+#language-button:hover {
+    opacity: 0.5;
 }
 
 .header-left {
@@ -35,25 +47,29 @@ body {
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.header-right {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #94C9C9;
 }
 
 .icon {
     display: flex;
-    background-color: white;
+    background-color: #94C9C9;
     border: solid white;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    border-radius: 5%;
     outline: 0;
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
-    color: white;
-    font-size: 1vw;
-    padding: 0.5rem;
     margin: 0.5rem;
-    height: 4rem;
-    width: 4rem;
+    height: 4.5rem;
+    width: 4.5rem;
     box-shadow: 5px 5px 5px #72716E;
     transform: scale (1);
 }
@@ -78,15 +94,6 @@ body {
     grid-column: 3 / 4;
 }
 
-.header-right {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #94C9C9;
-}
-
 .nav {
     display: flex;
     background-color:#94C9C9;
@@ -95,7 +102,7 @@ body {
     align-items: center;
     border-radius: 5%;
     outline: 0;
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     font-size: 1vw;
     padding: 0.5rem;
@@ -128,50 +135,20 @@ a {
     grid-column: 6 / 7;
 }
 
-#language-button {
-    background-color:#94C9C9;
-    border: solid white;
-    border-radius: 100%;
-    top: 6rem;
-    right: 2rem;
-    outline: 0;
-    font-family:  Geneva, Verdana, Tahoma, sans-serif;
-    color: white;
-    font-size: 1.2vw;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    height: 4rem;
-    width: 4rem;
-    box-shadow: 6px 6px 6px #72716E;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#language-button:hover {
-    opacity: 0.5;
-}
-
 
 #welcome {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
     background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
-    font-size: 7vw;
+    font-size: 7.5vw;
     color: #72716E;
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
     padding-top: 3rem;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
-}
-
-#welcome-title {
-    
     /* animation-name: pink-change;
     animation-duration: 15s;
     animation-iteration-count:infinite; */
@@ -296,7 +273,6 @@ a {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     z-index: 1;
-
 }
 
 .images {
@@ -305,7 +281,6 @@ a {
     border-radius: 100%;
     z-index: 0;
     margin-left: 0.5rem;
-
 }
 
 #Australia {
@@ -321,10 +296,15 @@ a {
 #Noosa {
     grid-row: 3 / 4;
     grid-column: 3 / span 4;
-    width: 80%;
-   
+    width: 80%; 
 }
 
+.grid-item-background {
+    background-color: #94C9C9; 
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;  
+    z-index: 0;
+}
 
 #why-fac{
     grid-row: 4 / 5;
@@ -506,53 +486,25 @@ ul{
         padding-top: 0.5rem;
     }
 
-    #header-right {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    #me-nav {
-        grid-row: 1 / 2;
-        grid-column: 3 / 4; 
-    }
-
-    #fac-nav {
-        grid-row: 1 / 2;
-        grid-column: 6 / 7;
-    }
-
-    #skills-nav {
-        grid-row: 2 / 3;
-        grid-column: 3 / 4;
-    }
-
     #language-button {
         height: 3rem;
         width: 3rem;
-        top: 4.5rem;
-        right: 0.1rem;
+        top: 0rem;
+        right: 0rem;
         font-size: 1.5rem;
     }
 
     .nav {
-       font-size: 0.9rem;
-       height: 2rem;
-       width: 2rem;
+       display: none;
+    
     }
 
-    #Git {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    }
-    
-    #FCC {
-        grid-row: 1 / 2;
-        grid-column: 3 / 4;
-    }
-    
-    #Codwars {
-        grid-row: 1 / 2;
-        grid-column: 6 / 7;
+    .icon {
+        background-color: #94C9C9;
+        border: none;
+        height: 2.5rem;
+        width: 2.5rem;
+        box-shadow: none;
     }
 
     #welcome {
@@ -560,9 +512,10 @@ ul{
     }
  
     #me {
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80vh;
     }
 
     #about-me-title {
@@ -573,14 +526,17 @@ ul{
     #about-me-intro {
         font-size: 3.5vw;
         height: 70vh;
+        width: 90vw;  
     }
 
     #about-me {
-        font-size:3.5vw;
+        font-size: 3.5vw;
         height: 70vh;
+        width: 90vw;
     }
 
     #photo-button {
+        display: none;
         height: 2rem;
         width: 4rem;
         font-size: 3vw;
@@ -588,41 +544,55 @@ ul{
 
     #about-me-button {
         grid-row: 3 / 4;
-        height: 2rem;
-        width: 4rem;
+        height: 6vh;
+        width: 20vw;
         font-size: 3vw;
+        margin-left: 0.5rem;
     }
-
-    #photo-button {
-        grid-row: 3 / 4;
-    };
 
     .images {
-    height: 12%;
-    width: 70%;
-    border-radius: 50%;
-    z-index: 1;
+        display: none;
+        height: 12%;
+        width: 70%;
+        border-radius: 50%;
+        z-index: 1;
     }
 
-    #why-fac {
+    #why-fac{
+        grid-column: 1 / span 2;
+        background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
+        font-size: 2vw;
+        color: #72716E; 
+        width: 100vw;
         height: 100vh;
-        justify-content: flex-start;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
     }
-
+    
     #why-fac-title {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3; 
         font-size: 7vw;
+        display: flex;
+        justify-content: flex-end;
+        font-family: yellowtail, Brush Script MT, Geneva, Verdana, Tahoma, sans-serif;
+        color: #E3016a;
     }
-
+    
     #why-programming {
+        padding-left: 0.5rem;
         font-size: 3.5vw;
     }
 
     #my-skills{
-    height: 95vh;
-    font-size: 2vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+        height: 95vh;
+        font-size: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     #my-skills-title {  
@@ -636,6 +606,10 @@ ul{
 
     ul {
         font-size: 3.5vw;
+        overflow: auto;
+        grid-column: 1 / span 2;
+        width: 90vw;
+        z-index: 1;
     }
 
     #icon-1 {
@@ -659,7 +633,7 @@ ul{
     }
 
     #skills-button {
-        width: 6rem;
+        width: 30vw;
         font-size: 3vw;
     }
 }
@@ -676,6 +650,10 @@ ul{
     }
 
     #down-button-3 {
+        display: none;
+    }
+
+    .nav {
         display: none;
     }
 
