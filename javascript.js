@@ -79,11 +79,11 @@ lang.addEventListener('click', languageClick);
 function popUp(){
     var aboutMeTest = document.getElementById("about-me");
     console.log(aboutMeTest);
-    const newDiv = document.createElement("div"); //tag type anchor
-    const newContent = document.createTextNode("I 💕 food! My two favourite chefs are Meera Sodha and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, 'Cook, Eat, Repeat'. You need to try her Ruby Noodles… you won't regret it! I 💕 the water. My friends are bored of hearing me say I think I was a dolphin in a previous life. My order of preference for swimming destinations is: A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak). If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter!). I 💕 the outdoors. Walking, running, sunbathing, you name it, I'll enjoy it! This year’s changed things a bit and I’ve swapped my goggles for pedals too, although I’ll admit I'm still at the stage of ‘all the gear… no idea’. I 💕 dramatic sunsets and sunrises (click below to find some of the best I've seen). I 💕 languages. I had a dream to learn Spanish and at 23 I made it a reality when I moved to Spain! I didn’t know much when I went, but now I’m fluent! Learning Spanish definitely inspired me to start learning to code and next on my linguistic list is French. I 💕 travelling. I spent a year exploring Australia alone before I moved to Spain and I'm sold on warmer climates, although London has stolen my heart for now. I 💕 my girlfriend, Lois (perhaps not so important to my application, but very important to me).");
+    const newDiv = document.createElement("div"); 
+    const newContent = document.createTextNode("I 💕 food! My two favourite chefs are Meera Sodha and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, 'Cook, Eat, Repeat'. You need to try her Ruby Noodles… you won't regret it! \n I 💕 the water. My friends are bored of hearing me say I think I was a dolphin in a previous life. My order of preference for swimming destinations is: A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak). If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter!). I 💕 the outdoors. Walking, running, sunbathing, you name it, I'll enjoy it! This year’s changed things a bit and I’ve swapped my goggles for pedals too, although I’ll admit I'm still at the stage of ‘all the gear… no idea’. \n \n I 💕 dramatic sunsets and sunrises. I 💕 languages. I had a dream to learn Spanish and at 23 I made it a reality when I moved to Spain! I didn’t know much when I went, but now I’m fluent! Learning Spanish definitely inspired me to start learning to code and next on my linguistic list is French. I 💕 travelling. I spent a year exploring Australia alone before I moved to Spain and I'm sold on warmer climates, although London has stolen my heart for now. \n \n I 💕 my girlfriend, Lois (perhaps not so important to my application, but very important to me).");
     const newContentSpanish = document.createTextNode("¡Me encanta la comida! Mis dos chefs favoritos son Meera Sodha (echa un vistazo a su columna vegana aquí) y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, Cook, Eat, Repeat. Prueba estos garabatos de rubí... ¡no decepcionarán! Me encanta el agua. Mi orden de preferencia por los destinos de natación es");
-    // newDiv.appendChild(newContent);
-    // Getting the translation button to work:
+    
+    // This part means that this pop up will be also respond to the language button, whenever it is clicked:
     const spanishTest = document.getElementById("about-me-intro");
     if (spanishTest["innerText"] == "aquí estará la traducción") {
         newDiv.appendChild(newContentSpanish);
@@ -120,36 +120,47 @@ function popUp2() {
     img.alt = "CSS 3";
     var insert2 = document.getElementById("my-skills-input");
 
-
     var iconTest2 = document.getElementById("icon-2")
     var img2 = document.createElement("img");
     img2.src = "javascript.png";
     img2.id = "icon-2";
     img2.alt = "Javascript";
     
-
     var iconTest3 = document.getElementById("icon-3")
     var img3 = document.createElement("img");
     img3.src = "html5.png";
     img3.id = "icon-3";
     img3.alt = "HTML 5";
-   
 
     var iconTest4 = document.getElementById("icon-4")
     var img4 = document.createElement("img");
     img4.src = "VS-Code.png";
     img4.id = "icon-4";
     img4.alt = "Visual Studio Code";
+
+    var iconTest5 = document.getElementById("icon-5")
+    var img5 = document.createElement("img");
+    img5.src = "Sketch.png";
+    img5.id = "icon-5";
+    img5.alt = "Sketch";
+
+    var iconTest6 = document.getElementById("icon-6")
+    var img6 = document.createElement("img");
+    img6.src = "responsive.png";
+    img6.id = "icon-6";
+    img6.alt = "Responsive design";
    
 
     // add in the other elements here
 
 
-if (iconTest == null && iconTest2 == null && iconTest3 == null && iconTest4 == null) {
+if (iconTest == null && iconTest2 == null && iconTest3 == null && iconTest4 == null && iconTest5 == null && iconTest6 == null) {
     insert2.insertBefore(img, null); 
     insert2.insertBefore(img2, null); 
     insert2.insertBefore(img3, null); 
-    insert2.insertBefore(img4, null)
+    insert2.insertBefore(img4, null);
+    insert2.insertBefore(img5, null);
+    insert2.insertBefore(img6, null);
     
     }
     else {
@@ -161,15 +172,19 @@ if (iconTest == null && iconTest2 == null && iconTest3 == null && iconTest4 == n
         removeEl3.remove();
         var removeEl4 = document.getElementById("icon-4");
         removeEl4.remove();
+        var removeEl5 = document.getElementById("icon-5");
+        removeEl5.remove();
+        var removeEl6 = document.getElementById("icon-6");
+        removeEl6.remove();
     }
 
 }
 const skills = document.getElementById("skills-button");
 skills.addEventListener('click', popUp2);
 
+//PHOTOS FUNCTION: 
 
 function photoPopUp() {
-
 
     var photoTest = document.getElementById("Australia");
     const photo = document.createElement("img");
@@ -184,14 +199,14 @@ function photoPopUp() {
     photo2.src = "Cadiz.png";
     photo2.id = "Cadiz";
     photo2.className = "images";
-    photo2.alt = "Sunset over the sea in Cadiz, Spain";
+    photo2.alt = "Rosie and Lois with Rosie's new bike";
     
     var photoTest3 = document.getElementById("Noosa");
     const photo3 = document.createElement("img");
     photo3.src = "animals.png";
     photo3.id = "Noosa";
     photo3.className = "images";
-    photo3.alt = "Sunset over the bay in Noosa, Australia";
+    photo3.alt = "Rosie holding a baby pig, with a kitten on her lap and lamb in the background";
 
     if (photoTest == null && photoTest2 == null && photoTest3 == null) {
         photoInsert.insertBefore(photo, null);
@@ -205,9 +220,7 @@ function photoPopUp() {
         removeElement2.remove();
         var removeElement3 = document.getElementById("Noosa");
         removeElement3.remove();
-
-    }
-   
+    }  
 }
 
 const photos = document.getElementById("photo-button");

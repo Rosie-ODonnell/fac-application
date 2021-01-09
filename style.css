@@ -48,6 +48,8 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;    
+    background-color: white;
+    filter: drop-shadow(1px 2px 3px #72716E);
 }
 
 .header-right {
@@ -57,6 +59,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #94C9C9;
+   
 }
 
 .icon {
@@ -130,6 +133,7 @@ a {
     animation-duration: 15s;
     animation-iteration-count:infinite;
     font-family: yellowtail, Brush Script MT, Geneva, Tahoma, sans-serif, futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    filter: drop-shadow(3px 3px 4px #C0C0C0);
 }
 
 #welcome {
@@ -145,10 +149,13 @@ a {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
+   
     /* animation-name: pink-change;
     animation-duration: 15s;
     animation-iteration-count:infinite; */
 }
+
+
 
 @keyframes pink-change {
     0% { color:#72716E; }
@@ -172,6 +179,7 @@ a {
     display: grid;
     grid-template-rows: 1fr, 3fr, 1fr, 0.5fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+   
 }
 
 #about-me-title {
@@ -179,6 +187,7 @@ a {
     font-family: yellowtail, Brush Script MT, Geneva, Verdana, Tahoma, sans-serif;
     color: #E3016a;
     padding-left: 0.5rem;
+    filter: drop-shadow(3px 3px 4px pink);
 }
 
 #about-me-intro {
@@ -192,6 +201,7 @@ a {
     padding:0.5rem;
     overflow: auto;
     z-index: 0; 
+   
 }
 
 #about-me {
@@ -205,6 +215,7 @@ a {
     padding:0.5rem;
     overflow: auto;
     z-index: 1;
+    
 }
 
 #about-me-button {
@@ -214,6 +225,7 @@ a {
     color: white;
     font-size: 1vw;
     border: none;
+    border-radius: 5px 30px;
     outline: none;
     background:#E3016a; 
     color: white;
@@ -237,6 +249,7 @@ a {
     color: white;
     font-size: 1vw;
     border: none;
+    border-radius: 5px 30px;
     outline: none;
     background:#E3016a; 
     color: white;
@@ -276,6 +289,9 @@ a {
     border-radius: 100%;
     z-index: 0;
     margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 #Australia {
@@ -325,11 +341,12 @@ a {
     font-family: yellowtail, Brush Script MT, Geneva, Verdana, Tahoma, sans-serif;
     color: #E3016a;
     padding-right: 0.5rem;
+    filter: drop-shadow(3px 3px 4px pink);
 }
 
 
 #why-programming {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     color: #72716E; 
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     overflow: auto;
@@ -350,6 +367,8 @@ a {
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     font-size: 2vw;
     color: #72716E;
+    overflow: auto;
+    
 }
 
 #my-skills-title {  
@@ -361,6 +380,7 @@ a {
     padding-left: 0.5rem;
     color:#E3016a ;
     height: 50px;
+    filter: drop-shadow(3px 3px 4px pink);
     
 }
 
@@ -379,7 +399,7 @@ ul{
     grid-column: 2 / 3; 
     list-style-type: none;
     padding-left: 0.5rem;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
   
@@ -391,13 +411,15 @@ ul{
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     font-size: 1vw;
     outline: 0;
-    margin: 2rem;
+    margin: 0.5rem;
     border: none;
+    border-radius: 5px 30px;
     background:#E3016a; 
     color: white;
     transform: scale (1);
     box-shadow: 6px 6px 6px #72716E;  
     height: 3rem;
+    transform: scale (1);
 }
 
 #skills-button:hover {
@@ -435,6 +457,16 @@ ul{
     grid-column: 2 / 3;
 }
 
+#icon-5 {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+#icon-6 {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+}
+
 #up-button {
     grid-row: 7 / 8;
     grid-column: 4 / 5;
@@ -454,6 +486,7 @@ ul{
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     font-size: 1rem;
     color: #72716E;
+    filter: drop-shadow(5px 5px 6px #72716E);
 }
 
 
@@ -609,21 +642,37 @@ ul{
     #icon-1 {
     grid-row: 6 / 7;
     grid-column: 1 / 2;
+    align-self: end;
     }
 
     #icon-2 {
     grid-row: 6 / 7;
     grid-column: 2 / 3;
+    align-self: end;
     }
 
     #icon-3 {
-    grid-row: 7 / 8;
-    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    align-self: end;
     }
 
     #icon-4 {
     grid-row: 7 / 8;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: end;
+    }
+
+    #icon-5 {
+        grid-row: 7 / 8;
+        grid-column: 2 / 3;
+        align-self: end;
+    }
+
+    #icon-6 {
+        grid-row: 7 / 8;
+        grid-column: 3 / 4;
+        align-self: end;
     }
 
     #skills-button {
@@ -650,5 +699,9 @@ ul{
     .nav {
         display: none;
     }
+
+    .images {
+        height: 18%;
+        width: 40%;
 
 }
