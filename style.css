@@ -458,6 +458,16 @@ ul{
     justify-content: flex-end;
 }
 
+#skills-small {
+display: none;
+font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
+font-size: 0.8rem;
+width: 100vw;
+padding-left: 0.5rem;
+filter: drop-shadow(5px 5px 6px #72716E);
+
+}
+
 #contact-me {
     grid-row: 6 / 7;
     grid-column: 1 / span 2;
@@ -625,6 +635,7 @@ ul{
     }
 
     #icon-1 {
+        display: none;
     grid-row: 6 / 7;
     grid-column: 1 / 2;
     align-self: end;
@@ -633,6 +644,7 @@ ul{
     }
 
     #icon-2 {
+        display: none;
     grid-row: 6 / 7;
     grid-column: 2 / 3;
     align-self: end;
@@ -641,6 +653,7 @@ ul{
     }
 
     #icon-3 {
+        display: none;
     grid-row: 6 / 7;
     grid-column: 3 / 4;
     align-self: end;
@@ -649,6 +662,7 @@ ul{
     }
 
     #icon-4 {
+        display: none;
     grid-row: 7 / 8;
     grid-column: 1 / 2;
     align-self: end;
@@ -657,6 +671,7 @@ ul{
     }
 
     #icon-5 {
+        display: none;
     grid-row: 7 / 8;
     grid-column: 2 / 3;
     align-self: end;
@@ -665,6 +680,7 @@ ul{
     }
 
     #icon-6 {
+        display: none;
     grid-row: 7 / 8;
     grid-column: 3 / 4;
     align-self: end;
@@ -673,9 +689,14 @@ ul{
     }
 
     #skills-button {
+        display: none;
         width: 30vw;
         font-size: 3vw;
     }
+
+    #skills-small {
+        display: flex;
+        }
 }
 
 
