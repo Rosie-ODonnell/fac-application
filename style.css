@@ -14,8 +14,6 @@ body {
     /* cursor: url('lgbt.png'), auto; */
 }
 
-/*delete this: */
-
 #language-button {
     background-color:#94C9C9;
     border: solid white;
@@ -41,15 +39,12 @@ body {
 #language-button:hover {
     opacity: 0.5;
 }
-
+/* delete: */
 .header-left {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;    
+    grid-column: 1 / 2;   
     background-color: white;
-    filter: drop-shadow(1px 2px 3px #72716E);
+    color: white;
 }
 
 .header-right {
@@ -59,7 +54,6 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #94C9C9;
-   
 }
 
 .icon {
@@ -81,10 +75,6 @@ body {
     opacity: 0.5;
     transform: scale (1.5);
 }
-
-.iconify { 
-    width: 32px; 
-    height: 32px; }
 
 .nav {
     display: flex;
@@ -110,6 +100,8 @@ body {
 
 a {
     color: white;
+    text-decoration: none;
+    text-align: center;
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
 }
 
@@ -133,8 +125,13 @@ a {
     animation-duration: 15s;
     animation-iteration-count:infinite;
     font-family: yellowtail, Brush Script MT, Geneva, Tahoma, sans-serif, futura,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    filter: drop-shadow(3px 3px 4px #C0C0C0);
 }
+
+@keyframes pink-change {
+    0% { color:#72716E;  filter: drop-shadow(3px 3px 4px #C0C0C0);}
+  50% { color: #E3016a; filter: drop-shadow(3px 3px 4px pink);}
+    100% { color: #72716E;  filter: drop-shadow(3px 3px 4px #C0C0C0);} 
+  }
 
 #welcome {
     grid-row: 2 / span 1;
@@ -149,20 +146,7 @@ a {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 0.5rem;
-   
-    /* animation-name: pink-change;
-    animation-duration: 15s;
-    animation-iteration-count:infinite; */
 }
-
-
-
-@keyframes pink-change {
-    0% { color:#72716E; }
-  50% { color: #E3016a; }
-    100% { color: #72716E; } 
-  }
-
 
 #down-button{
     display: flex;
@@ -179,7 +163,6 @@ a {
     display: grid;
     grid-template-rows: 1fr, 3fr, 1fr, 0.5fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   
 }
 
 #about-me-title {
@@ -188,6 +171,8 @@ a {
     color: #E3016a;
     padding-left: 0.5rem;
     filter: drop-shadow(3px 3px 4px pink);
+    align-self: end;
+    height: 3vh; /*change this if issues on responsive */
 }
 
 #about-me-intro {
@@ -197,11 +182,10 @@ a {
     grid-column: 1 / 3;
     font-size: 1.2rem;
     width: 45vw;
-    height: 60vh;
+    height: 70vh;
     padding:0.5rem;
     overflow: auto;
     z-index: 0; 
-   
 }
 
 #about-me {
@@ -211,11 +195,10 @@ a {
     grid-column: 1 / 3;
     font-size: 1.2rem;
     width: 45vw;
-    height: 60vh;
+    height: 70vh;
     padding:0.5rem;
     overflow: auto;
-    z-index: 1;
-    
+    z-index: 1; 
 }
 
 #about-me-button {
@@ -294,6 +277,8 @@ a {
     justify-content: flex-end;
 }
 
+/*fix these names to match pics */
+
 #Australia {
     grid-row: 3 / 4;
     grid-column: 2 / span 2;
@@ -329,7 +314,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
 }
 
 #why-fac-title {
@@ -356,7 +340,6 @@ a {
 #down-button-3{
     display: flex;
     justify-content: flex-end;
-    
 }
 
   #my-skills{
@@ -368,7 +351,6 @@ a {
     font-size: 2vw;
     color: #72716E;
     overflow: auto;
-    
 }
 
 #my-skills-title {  
@@ -379,9 +361,8 @@ a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     color:#E3016a ;
-    height: 50px;
+    height: 50px; /* change this to make title smaller */ 
     filter: drop-shadow(3px 3px 4px pink);
-    
 }
 
 #skills-subtitle {
@@ -402,8 +383,6 @@ ul{
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-  
-
 }
 
 #skills-button {
@@ -426,7 +405,6 @@ ul{
     opacity: 0.5;
     transform: scale (1.5);
 }
-
 
 #my-skills-input {
     grid-row: 5 / 6;
@@ -489,7 +467,6 @@ ul{
     filter: drop-shadow(5px 5px 6px #72716E);
 }
 
-
 #twitter {
     transform: scale (1);
 }
@@ -500,8 +477,6 @@ ul{
 
 
  /* MEDIA QUERIES */
-
- /* have another media query for max-width: 1024px */
 
 
 @media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
@@ -543,7 +518,7 @@ ul{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 80vh;
+        height: 100vh;
     }
 
     #about-me-title {
@@ -596,7 +571,6 @@ ul{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        
     }
     
     #why-fac-title {
@@ -615,15 +589,22 @@ ul{
     }
 
     #my-skills{
-        height: 95vh;
+        grid-column: 1 / span 2;
+        background: linear-gradient(to right, #FFFFFF 50%, #94C9C9 50%);
         font-size: 2vw;
+        color: #72716E; 
+        width: 100vw;
+        height: 95vh;
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        margin: auto;
     }
 
     #my-skills-title {  
         font-size: 7vw;
+        width: 50vw;
     }
 
     #my-skills-input{
@@ -633,7 +614,6 @@ ul{
 
     ul {
         font-size: 3.5vw;
-        overflow: auto;
         grid-column: 1 / span 2;
         width: 90vw;
         z-index: 1;
@@ -643,36 +623,48 @@ ul{
     grid-row: 6 / 7;
     grid-column: 1 / 2;
     align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #icon-2 {
     grid-row: 6 / 7;
     grid-column: 2 / 3;
     align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #icon-3 {
     grid-row: 6 / 7;
     grid-column: 3 / 4;
     align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #icon-4 {
     grid-row: 7 / 8;
     grid-column: 1 / 2;
     align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #icon-5 {
-        grid-row: 7 / 8;
-        grid-column: 2 / 3;
-        align-self: end;
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #icon-6 {
-        grid-row: 7 / 8;
-        grid-column: 3 / 4;
-        align-self: end;
+    grid-row: 7 / 8;
+    grid-column: 3 / 4;
+    align-self: end;
+    height: 6vh;
+    width: 10vw;
     }
 
     #skills-button {

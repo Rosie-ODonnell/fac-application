@@ -1,4 +1,3 @@
-
 // LANGUAGE BUTTON FUNCTION: 
 
 function languageClick() {
@@ -17,7 +16,7 @@ function languageClick() {
     english[4]["innerText"] = "Soy Rosie."
     english[5]["innerText"] = "Bienvenido a mi \n Solicitud.";
     english[6]["innerText"] = "acerca de mí";
-    english[7]["innerText"] = "aquí estará la traducción";
+    english[7]["innerText"] = "Soy una programadora autodidacta, y estoy aplicando a Founders and Coders para convertir mi sueño de convertirse en un ingeniera de software profesional en una realidad! Durante los últimos nueves meses, he estado aprendiendo a codificar durante mis noches y fines de semana y ¡me encanta! De hecho, iría tan lejos para decir que estoy enganchada, lo que creo que es una manera bastante guay de comenzar una carrera. Actualmente, trabajo como trabajadora social de una organización benéfica sin hogar, pero estoy comprometida a cambiar a una carrera que haga que mi cerebro trabaje más duro, me desafíe de nuevas maneras y me permita hacer la mejor contribución a la sociedad que pueda. He trabajado en el sector tercero durante los últimos tres anos, trabando primero para una organización que intenta hacer que el sistema financial sea mas justo, antes de empezar en mi posición actual. He sido voluntaria en el sector de benéfica sin hogar durante los últimos ocho anos así que soy muy consciente de los fortalezas y limitaciones del trabajo de primera línea. Ahora, quiero hacer un impacto más amplio, y seguir una carrera que algún día me permitirá contribuir a la resolución de los problemas sociales a mayor escala. Espero combinar mi capacidad técnica y mis otros habilidades para tener un mayor impacto que el que puedo lograr en primera línea. Pero una mujer es más que su trabajo, así que antes de explicarles porque me encantaría estar una parte de su cohorte de Primavera 2021, Me gustaría tomar un momento para contarles un poco más sobre mí y algunas otras cosas que me apasionan…";
     english[8]["innerText"] = "Haz click para más";
     english[9]["innerText"] = "Fotos";
     english[10]["innerText"] = "¿por qué programar? \n ¿por qué fac?";
@@ -42,7 +41,7 @@ function languageClick() {
         english[4]["innerText"] = "I'm Rosie."
         english[5]["innerText"] = "Welcome to my \n application.";
         english[6]["innerText"] = "about me";
-        english[7]["innerText"] = "I'm a self-taught developer, and I'm applying to Founders and Coders to turn my dream of becoming a professional programmer into a reality! \n \n I love coding. In fact, I’d go so far to say I’m obsessed, which I think is a pretty cool way to start a career! \n \n Currently, I work as a caseworker for a homeless charity but I'm switching into a career that will get my brain buzzing more, challenge me in new ways and allow me to make the best contribution to society that I can. \n \n But a woman is more than her code, so before I tell you why I'd love to be part of your Spring 2021 cohort, I'd like to take a moment to tell you a little bit more about me and some others things I love...";
+        english[7]["innerText"] = "I'm a self-taught developer, and I'm applying to Founders and Coders to turn my dream of becoming a professional programmer into a reality! \n \n I’ve been learning to code in my evenings and weekends for the last 9 months and I love it. In fact, I’d go so far to say that I’m obsessed, which I think is a pretty cool way to start a career! \n \n Currently, I work as a caseworker for a homeless charity but I’m determined to switch into a career that will get my brain buzzing more, challenge me in new ways and allow me to make the best contribution to society that I can. \n \n I've worked in the third sector for the last three years, first working for a charity trying to make the finance system fairer, and now for a homeless charity. I've been volunteering within the homelessness sector for the last 8 years so I’m well aware of the strengths and limitations of frontline work. \n \n Now, I want to make a broader impact, and pursue a career which will one day allow me to contribute to solving social issues on a larger scale. I hope to combine my technical ability and softer skills to have a greater impact than I can achieve on the frontline. \n \n But a woman is more than her work, so before I tell you why I'd love to be part of your Spring 2021 cohort, I'd like to take a moment to tell you a little bit more about me and some others things I'm passionate about...";
         english[8]["innerText"] = "Click for more";
         english[9]["innerText"] = "Snaps";
         english[10]["innerText"] = "why programming? \n why fac?";
@@ -59,16 +58,16 @@ function languageClick() {
         english[21]["innerText"] = "Find me on";
     };
 
-    //this will translate the About Me texted if it is already open:
+    //this will translate the About Me pop up if it is already open:
     var element = document.getElementById("about-me")
     if (element != null) {
-        element["innerText"] = "¡Me encanta la comida! Mis dos chefs favoritos son Meera Sodha (echa un vistazo a su columna vegana aquí) y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, Cook, Eat, Repeat. Prueba estos garabatos de rubí... ¡no decepcionarán! Me encanta el agua. Mi orden de preferencia por los destinos de natación es";
+        element["innerText"] = "¡💕 la comida! Mis dos chefs favoritos son Meera Sodha y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, 'Cook, Eat, Repeat'. Tienes que probar su Ruby Noodles... ¡no te arrepentirás! ¡💕  el agua! Mis amigos se aburren de oírme decir que yo era un delfín en una vida anterior. Mi orden de preferencia por los destinos para nadar es: Un mar tranquilo > un lago claro > un río > un arroyo > un baño (bien, sólo para un remojo). Si no puedo tener esos me conformo con London Fields Lido (sí, incluso en invierno!). ¡💕  el aire libre!  Caminar, correr, tomar el sol, lo que sea, ¡lo disfrutaré! Las cosas de este año han cambiado un poco y también he cambiado mis gafas de baño por pedales, aunque admito que todavía estoy en la etapa de 'todo el equipo... no tengo ni idea'. ¡💕 las puestas de sol y los amaneceres. Me encantan las idiomas. ¡tenía un sueño de aprender español y en 23 lo hice realidad cuando me mudé a España! No sabía mucho cuando fui, pero ahora estoy fluidamente! Aprender español definitivamente me inspiró a empezar a aprender a codificar y el siguiente en mi lista lingüística es el francés. ¡💕 viajar!  Pasé un año explorando Australia sola antes de trasladarme a España y me gustaría instalarme en un clima caliente de nuevo con el tiempo, aunque Londres me ha robado el corazón por ahora. ¡💕 mi novia, Lois! (quizás no tan importante para mi solicitud, pero muy importante para mí";
     }
 
     if (element != null && buttonText == "EN") {
     element["innerText"] = "I 💕 food! My two favourite chefs are Meera Sodha and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, 'Cook, Eat, Repeat'. Try her Ruby Noodles… you won't regret it! I 💕 the water. My order of preference for swimming destinations is: A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak). If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter!). My friends are bored of hearing me say I think I was a dolphin in a previous life. I 💕 the outdoors. This year’s changed things a bit and I’ve swapped my goggles for pedals, to explore the city on wheels, although I’m still at the stage of ‘all the gear… no idea’. I 💕 dramatic sunsets and sunrises (click below to find some of the best I've seen). I 💕 languages. When I was 23, I moved to Spain to learn Spanish. I didn’t know much when I went, but now I’m fluent! Next on my list is French. I 💕 my girlfriend, Lois (perhaps not so important to my application, but very important to me).";
 
-}
+    }
 }
 
 const lang = document.getElementById("language-button");
@@ -76,16 +75,17 @@ lang.addEventListener('click', languageClick);
 
 //ABOUT ME FUNCTION:
 
+
 function popUp(){
     var aboutMeTest = document.getElementById("about-me");
     console.log(aboutMeTest);
     const newDiv = document.createElement("div"); 
     const newContent = document.createTextNode("I 💕 food! My two favourite chefs are Meera Sodha and Nigella Lawson. If you’re a Nigella fan, you might have noticed that my colour scheme is inspired by her new book, 'Cook, Eat, Repeat'. You need to try her Ruby Noodles… you won't regret it! \n I 💕 the water. My friends are bored of hearing me say I think I was a dolphin in a previous life. My order of preference for swimming destinations is: A calm sea > a clear lake > a river > a stream > a bath (alright, just for a soak). If I can’t have those I’ll settle for London Fields Lido (yes, even in the winter!). I 💕 the outdoors. Walking, running, sunbathing, you name it, I'll enjoy it! This year’s changed things a bit and I’ve swapped my goggles for pedals too, although I’ll admit I'm still at the stage of ‘all the gear… no idea’. \n \n I 💕 dramatic sunsets and sunrises. I 💕 languages. I had a dream to learn Spanish and at 23 I made it a reality when I moved to Spain! I didn’t know much when I went, but now I’m fluent! Learning Spanish definitely inspired me to start learning to code and next on my linguistic list is French. I 💕 travelling. I spent a year exploring Australia alone before I moved to Spain and I'm sold on warmer climates, although London has stolen my heart for now. \n \n I 💕 my girlfriend, Lois (perhaps not so important to my application, but very important to me).");
-    const newContentSpanish = document.createTextNode("¡Me encanta la comida! Mis dos chefs favoritos son Meera Sodha (echa un vistazo a su columna vegana aquí) y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, Cook, Eat, Repeat. Prueba estos garabatos de rubí... ¡no decepcionarán! Me encanta el agua. Mi orden de preferencia por los destinos de natación es");
+    const newContentSpanish = document.createTextNode("¡💕 la comida! Mis dos chefs favoritos son Meera Sodha y Nigella Lawson. Si eres fan de Nigella, quizás te hayas dado cuenta de que mi esquema de colores está inspirado en su nuevo libro, 'Cook, Eat, Repeat'. Tienes que probar su Ruby Noodles... ¡no te arrepentirás! ¡💕 el agua! Mis amigos se aburren de oírme decir que yo era un delfín en una vida anterior. Mi orden de preferencia por los destinos para nadar es: Un mar tranquilo > un lago claro > un río > un arroyo > un baño (bien, sólo para un remojo). Si no puedo tener esos me conformo con London Fields Lido (sí, incluso en invierno!). ¡💕 el aire libre!  Caminar, correr, tomar el sol, lo que sea, ¡lo disfrutaré! Las cosas de este año han cambiado un poco y también he cambiado mis gafas de baño por pedales, aunque admito que todavía estoy en la etapa de 'todo el equipo... no tengo ni idea'. ¡💕 las puestas de sol y los amaneceres. Me encantan las idiomas. ¡tenía un sueño de aprender español y en 23 lo hice realidad cuando me mudé a España! No sabía mucho cuando fui, pero ahora estoy fluidamente! Aprender español definitivamente me inspiró a empezar a aprender a codificar y el siguiente en mi lista lingüística es el francés. ¡💕 viajar!  Pasé un año explorando Australia sola antes de trasladarme a España y me gustaría instalarme en un clima caliente de nuevo con el tiempo, aunque Londres me ha robado el corazón por ahora. ¡💕 mi novia, Lois! (quizás no tan importante para mi solicitud, pero muy importante para mí");
     
     // This part means that this pop up will be also respond to the language button, whenever it is clicked:
     const spanishTest = document.getElementById("about-me-intro");
-    if (spanishTest["innerText"] == "aquí estará la traducción") {
+    if (spanishTest["innerText"] == "Soy una programadora autodidacta, y estoy aplicando a Founders and Coders para convertir mi sueño de convertirse en un ingeniera de software profesional en una realidad! Durante los últimos nueves meses, he estado aprendiendo a codificar durante mis noches y fines de semana y ¡me encanta! De hecho, iría tan lejos para decir que estoy enganchada, lo que creo que es una manera bastante guay de comenzar una carrera. Actualmente, trabajo como trabajadora social de una organización benéfica sin hogar, pero estoy comprometida a cambiar a una carrera que haga que mi cerebro trabaje más duro, me desafíe de nuevas maneras y me permita hacer la mejor contribución a la sociedad que pueda. He trabajado en el sector tercero durante los últimos tres anos, trabando primero para una organización que intenta hacer que el sistema financial sea mas justo, antes de empezar en mi posición actual. He sido voluntaria en el sector de benéfica sin hogar durante los últimos ocho anos así que soy muy consciente de los fortalezas y limitaciones del trabajo de primera línea. Ahora, quiero hacer un impacto más amplio, y seguir una carrera que algún día me permitirá contribuir a la resolución de los problemas sociales a mayor escala. Espero combinar mi capacidad técnica y mis otros habilidades para tener un mayor impacto que el que puedo lograr en primera línea. Pero una mujer es más que su trabajo, así que antes de explicarles porque me encantaría estar una parte de su cohorte de Primavera 2021, Me gustaría tomar un momento para contarles un poco más sobre mí y algunas otras cosas que me apasionan…") {
         newDiv.appendChild(newContentSpanish);
     } else {
         newDiv.appendChild(newContent);
@@ -97,7 +97,7 @@ function popUp(){
     const insert = document.getElementById("me");
     
     if (aboutMeTest == null) {
-    insert.insertBefore(newDiv, currentDiv); //(what I want, what I have: anchor) 
+    insert.insertBefore(newDiv, currentDiv); 
     spanishTest.style.display = "none";
     }
     else {
@@ -109,6 +109,7 @@ function popUp(){
 
 const me = document.getElementById("about-me-button");
 me.addEventListener('click', popUp);
+
 
 //MY SKILLS FUNCTION:
 
