@@ -20,17 +20,23 @@ function languageClick() {
     english[8]["innerText"] = "Haz click para más";
     english[9]["innerText"] = "Fotos";
     english[10]["innerText"] = "¿por qué programar? \n ¿por qué fac?";
-    english[11]["innerText"] = "¡la tecnología es emocionante! Y con la velocidad en la que cambia el mundo, quiero ser una de las fuerzas motrices";
-    english[12]["innerText"] = "La programación tiene el potencial de ser utilizada para tanto bien, y como el software de código bajo y sin código aumenta en popularidad, quiero estar por delante de la curva para que pueda trabajar en una codificación más compleja para crear sistemas y productos que mejoren la vida de las personas.";
-    english[13]["innerText"] = "La perspectiva del aprendizaje permanente es también un gran atractivo para la carrera. Me encanta la creatividad de la codificación y los constantes desafíos que conlleva - me deshago de esa sensación después de horas codificando cuando mi cerebro está gimiendo y no puedo continuar: Lo único que quiero hacer es ir a la cama y despertar con la cabeza clara para continuar.";
-    english[14]["innerText"] = "I also like the flexibility and opportunities that being a developer offers. There’s not a medium or industry I can think of that doesn’t require technology in some form, which offers developers a unique route to moving between industries whilst constantly developing your skills.";
+    english[11]["innerText"] = "¡La tecnología es emocionante! El potencial para el bien que tiene la programación es inmenso y quiero ayudar a crear sistemas y productos que mejoren la vida de la gente.";
+    english[12]["innerText"] = "He recorrido un largo camino en los últimos 9 meses y ahora estoy lista para estudiar a tiempo completo, poner en las horas que no he podido durante trabajar, y dar el mayor paso hasta ahora para encontrar mi primer papel de programación. Habiendo explorado una variedad de opciones, quiero dar este paso con los Fundadores y codificadores.";
+    english[13]["innerText"] = "Su modelo de aprendizaje colaborativo fue un gran atractivo para mí y, habiendo sido parte de la comunidad desde abril, creo que funciona tan bien debido a la diversidad de sus solicitantes y cohortes.";
+    english[14]["innerText"] = "Ha sido empoderar para unirse a las llamadas semanales Zoom y el programa con un grupo de solicitantes con los que realmente puedo identificar y conectar. Nunca he tenido tanta diversión aprendiendo como durante esos Zoom Meet-ups; siempre dejo las llamadas sintiéndome motivadas y felices. Las respuestas a las katas que he resuelto colaborando con otros son siempre más fuertes que cuando he trabajado sola, y creo que es porque el código es el producto de la diversidad de pensamiento. ";
     english[15]["innerText"] = "Con la programación, siempre hay más que construir y más que aprender. Y también hay precaución que tener. Es importante analizar críticamente la velocidad a la que la tecnología reforma las industrias y el impacto que esto tiene. A menudo me pregunto si suficientes personas que trabajan en tecnología son constructivamente críticas de sus propios poderes; creo que más gente debería ser. Me encantaría trabajar en tecnología porque me asombra y aterroriza igualmente.";
-    english[16]["innerText"] = "¿qué llevaré a la cohorte?";
-    english[17]["innerText"] = "Tengo experiencia en la enseñanza, que sé por mi viaje de codificación hasta ahora es una habilidad valiosa. Los nuevos estudiantes son los mejores profesores para otros nuevos estudiantes, y también tengo la paciencia requerida...";
-    english[18]["innerText"] = "Solución de problemas: mi trabajo actual requiere que resuelva problemas sobre el terreno y trabaje con nuevos casos todos los días.";
-    english[19]["innerText"] = "aquí estará la tercero asunto";
-    english[20]["innerText"] = "Habilidades técnicas";
-    english[21]["innerText"] = "Encuéntrame en"
+    english[16]["innerText"] = "Founders and Coders es una organización especial por tantas razones, pero lo más importante por su espíritu de inclusión y su compromiso con el aumento de la diversidad en la industria tecnológica, que pone en práctica.";
+    english[17]["innerText"] = "Como mujer, ser ingeniera de software nunca fue una carrera que se sentía obviamente disponible para mí. Según las estadísticas actuales, las mujeres constituyen alrededor del 11% de los programadores en el mundo, mientras que las personas no binarias y trans representan menos del 1%. Hasta que conocí a uno de sus antiguos alumnos el año pasado, nunca había conocido a una ingeniera de software, pero ser parte de la comunidad de FAC me ha presentado modelas a seguir, un ambiente seguro en el que cometer errores y un sentido de apoyo mutuo.";
+    english[18]["innerText"] = "También sé que mi inclusión en la industria solo sería un pequeño paso hacia su necesaria diversificación. La respuesta a la diversidad en la industria tecnológica no es simplemente contratar a un grupo de mujeres blancas y llamarla igualdad. Sabemos que el código puede asumir los sesgos del ingeniero, incluso si está inconsciente, por lo que es tan importante que la industria tecnológica sea diversa y que su fuerza de trabajo sea educada sobre la diversidad. Con ese fin sé que también es mi responsabilidad seguir educando, utilizar cualquier privilegio que tenga de hacer espacio para otras mujeres y minorías, y para amplificar sus voces.";
+    english[19]["innerText"] = "¿Cómo podemos atraer talentos más diversos a la industria y crear un ambiente que retiene y celebrar ese talento? Dos preguntas complejas, pero creo que FAC ya está demostrando un primer paso crucial: Trabajar duro para co-crear un ambiente inclusivo y de apoyo para todos los tipos de personas para aprender, mejorar y prosperar juntos. Escuchar y aprender unos de otros es vital.";
+    english[20]["innerText"] = "La experiencia que he tenido con FAC en los últimos meses es exactamente lo que espero que la industria tecnológica sea algún día, pero que sé que todavía no es: un ambiente acogedor que defiende la diversidad.";
+    english[21]["innerText"] = "Sería un honor contribuir a esta cohorte inclusiva, divertida y determinada en la primavera de 2021, y a la comunidad Founders and Coders en el futuro.";
+    english[22]["innerText"] = "¿qué llevaré a la cohorte?";
+    english[23]["innerText"] = "Tengo experiencia en la enseñanza, que sé por mi viaje de codificación hasta ahora es una habilidad valiosa. Los nuevos estudiantes son los mejores profesores para otros nuevos estudiantes, y también tengo la paciencia requerida...";
+    english[24]["innerText"] = "Solución de problemas: mi trabajo actual requiere que resuelva problemas sobre el terreno y trabaje con nuevos casos todos los días.";
+    english[25]["innerText"] = "aquí estará la tercero asunto";
+    english[26]["innerText"] = "Habilidades técnicas";
+    english[27]["innerText"] = "Encuéntrame en"
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
@@ -45,17 +51,23 @@ function languageClick() {
         english[8]["innerText"] = "Click for more";
         english[9]["innerText"] = "Snaps";
         english[10]["innerText"] = "why programming? \n why fac?";
-        english[11]["innerText"] = "Technology is exciting! And with the speed its changing the world at, I want to be one of the driving forces.";
-        english[12]["innerText"] = "Programming has the potential to be used for so much good, and as low-code and no-code software increases in popularity, I want to be ahead of the curve so that I can work on more complex coding to create systems and products that make people’s lives better.";
-        english[13]["innerText"] = "The prospect of life-long learning is also a big draw to the career. I love the creativity of coding and the constant challenges it brings - I thrive off that feeling after hours coding when my brain is groggy and I can’t continue: the only thing I want to do is go to bed and wake up clear-headed to continue.";
-        english[14]["innerText"] = "I also like the flexibility and opportunities that being a developer offers. There’s not a medium or industry I can think of that doesn’t require technology in some form, which offers developers a unique route to moving between industries whilst constantly developing your skills.";
-        english[15]["innerText"] = "With programming, there is always more to build and more to learn. And there is also caution to be had. It’s important to look critically at the rate at which technology reshapes industries and the impact this has. I often wonder if enough people working in tech are constructively critical of its own powers; I think more people should be.  I would love to work in technology because it equally amazes and terrifies me.";
-        english[16]["innerText"] = "what I'll bring to the cohort";
-        english[17]["innerText"] = "I have teaching experience, which I know from my coding journey so far is a valuable skill. New learners are the best teachers for other new learners, and I also have the patience required...";
-        english[18]["innerText"] = "Problem-solving: my current work requires me to problem solve on the spot, and work with new cases every day.";
-        english[19]["innerText"] = "Here will be the third point";
-        english[20]["innerText"] = "My technical skills";
-        english[21]["innerText"] = "Find me on";
+        english[11]["innerText"] = "Technology is exciting! The potential for good that programming holds is immense and I want to help create systems and products that make people’s lives better.";
+        english[12]["innerText"] = "I’ve come a long way in the last 9 months and I’m now ready to study full-time, put in the hours that I haven’t been able to whilst working, and take the biggest step yet towards finding my first programming role. Having explored a variety of options, I want to take this step with Founders and Coders.";
+        english[13]["innerText"] = "FAC’s model of peer-led, collaborative learning was a huge draw for me and, having been part of the community since April, I believe it works so well because of the diversity of your applicants and cohorts.";
+        english[14]["innerText"] = "It’s been empowering to dial-in to the weekly Zoom calls and pair-code with a group of applicants who I can really identify and connect with. I’ve never had as much fun learning as during those Zoom meet-ups; I always leave the calls feeling motivated and happy. The answers to katas that I have solved by collaborating with others are always stronger than when I’ve worked alone, and I believe it’s because the code is the product of diversity of thought. It’s helped me appreciate the value of collaboration in this career.";
+        english[15]["innerText"] = "It has also been rewarding to share the knowledge I’ve gained during my weekly coaching sessions with other applicants as we pair-code; it’s been fulfilling to contribute to others’ growth as well as my own. ";
+        english[16]["innerText"] = "Founders and Coders is a special organisation for so many reasons, but most importantly for its ethos of inclusivity and its commitment to increasing diversity in the tech industry, which it puts into practice.";
+        english[17]["innerText"] = "As a woman, being a software developer was never a career which felt obviously available to me. According to current stats, women make up around 11% of programmers in the world, whilst non-binary and trans people make up less than 1%. Until I met one of your alumni last year, I had never met a female software engineer, but being part of FAC’s community has presented me with role models to look up to, a safe environment to make mistakes in and a sense of mutual support.";
+        english[18]["innerText"] = "I also know that my inclusion in the industry would only be a small step towards its necessary diversification. The answer to diversity in the tech industry is not to simply hire a bunch of white women and call it equality. We know that code can take on the biases of the coder, even if unconscious, which is why it is so important for the tech industry to be both diverse and for its workforce to be educated about diversity. To that end I know it is also my responsibility to continue to educate myself, to use any privilege I have to make space for other women and minorities, and to amplify their voices.";
+        english[19]["innerText"] = "How can we attract more diverse talent to the industry and create an environment which retains and champions that talent? Two complex questions, but I think FAC is already demonstrating a crucial first step: work hard to co-create an inclusive, supportive environment for all types of people to learn, improve and flourish together. Listening to, and learning from, each other is vital."
+        english[20]["innerText"] = "The experience that I have had with FAC over the past few months is exactly what I hope the tech industry to one day be, but which I know it is yet not: a welcoming environment which champions diversity.";        
+        english[21]["innerText"] = "It would be an honour to contribute to this inclusive, fun, determined cohort in Spring 2021, and the Founders and Coders community in the future.";
+        english[22]["innerText"] = "what I'll bring to the cohort";
+        english[23]["innerText"] = "I have teaching experience, which I know from my coding journey so far is a valuable skill. New learners are the best teachers for other new learners, and I also have the patience required...";
+        english[24]["innerText"] = "Problem-solving: my current work requires me to problem solve on the spot, and work with new cases every day.";
+        english[25]["innerText"] = "Here will be the third point";
+        english[26]["innerText"] = "My technical skills";
+        english[27]["innerText"] = "Find me on";
     };
 
     //this will translate the About Me pop up if it is already open:
@@ -109,7 +121,6 @@ function popUp(){
 
 const me = document.getElementById("about-me-button");
 me.addEventListener('click', popUp);
-
 
 //MY SKILLS FUNCTION:
 
