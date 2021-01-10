@@ -277,8 +277,6 @@ a {
     justify-content: flex-end;
 }
 
-/*fix these names to match pics */
-
 #bike {
     grid-row: 3 / 4;
     grid-column: 2 / span 2;
@@ -328,14 +326,12 @@ a {
     filter: drop-shadow(3px 3px 4px pink);
 }
 
-
 #why-programming {
     font-size: 1.2rem;
     color: #72716E; 
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     overflow: auto;
 }
-
 
 #down-button-3{
     display: flex;
@@ -353,7 +349,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  
 }
 
 #my-skills-title {  
@@ -460,8 +455,6 @@ ul{
 
 #skills-small {
 display: none;
-
-
 }
 
 #contact-me {
@@ -510,7 +503,6 @@ display: none;
 
     .nav {
        display: none;
-    
     }
 
     .icon {
@@ -581,7 +573,7 @@ display: none;
         padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     
     #why-fac-title {
@@ -609,7 +601,7 @@ display: none;
         padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: auto;
     }
 
@@ -632,71 +624,42 @@ display: none;
 
     #icon-1 {
         display: none;
-    grid-row: 6 / 7;
-    grid-column: 1 / 2;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #icon-2 {
         display: none;
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #icon-3 {
         display: none;
-    grid-row: 6 / 7;
-    grid-column: 3 / 4;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #icon-4 {
         display: none;
-    grid-row: 7 / 8;
-    grid-column: 1 / 2;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #icon-5 {
         display: none;
-    grid-row: 7 / 8;
-    grid-column: 2 / 3;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #icon-6 {
         display: none;
-    grid-row: 7 / 8;
-    grid-column: 3 / 4;
-    align-self: end;
-    height: 6vh;
-    width: 10vw;
     }
 
     #skills-button {
         display: none;
-        width: 30vw;
-        font-size: 3vw;
     }
 
     #skills-small {
         display: flex;
         font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
         font-size: 0.8rem;
-        width: 100vw;
         padding-left: 0.5rem;
         filter: drop-shadow(5px 5px 6px #72716E);
+        }
+
+        #contact-me {
+            filter: none;
         }
 }
 
