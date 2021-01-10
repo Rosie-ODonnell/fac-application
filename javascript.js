@@ -205,9 +205,9 @@ function photoPopUp() {
     var photoTest = document.getElementById("Australia");
     const photo = document.createElement("img");
     photo.src = "bike.png";
-    photo.id = "Australia";
+    photo.id = "bike";
     photo.className = "images";
-    photo.alt = "Sunset over the sea in Fremantle, Australia";
+    photo.alt = "Rosie and Lois with Rosie's new bike";
     var photoInsert = document.getElementById("my-images-input");
 
     var photoTest2 = document.getElementById("Cadiz");
@@ -215,12 +215,12 @@ function photoPopUp() {
     photo2.src = "Cadiz.png";
     photo2.id = "Cadiz";
     photo2.className = "images";
-    photo2.alt = "Rosie and Lois with Rosie's new bike";
+    photo2.alt = "Sunset over the sea in Cadiz, Spain ";
     
     var photoTest3 = document.getElementById("Noosa");
     const photo3 = document.createElement("img");
     photo3.src = "animals.png";
-    photo3.id = "Noosa";
+    photo3.id = "animals";
     photo3.className = "images";
     photo3.alt = "Rosie holding a baby pig, with a kitten on her lap and lamb in the background";
 

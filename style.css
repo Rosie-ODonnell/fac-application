@@ -279,7 +279,7 @@ a {
 
 /*fix these names to match pics */
 
-#Australia {
+#bike {
     grid-row: 3 / 4;
     grid-column: 2 / span 2;
 }
@@ -289,7 +289,7 @@ a {
     grid-column: 1 / span 2;
 }
 
-#Noosa {
+#animals {
     grid-row: 3 / 4;
     grid-column: 3 / span 4;
     width: 80%; 
@@ -460,11 +460,7 @@ ul{
 
 #skills-small {
 display: none;
-font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
-font-size: 0.8rem;
-width: 100vw;
-padding-left: 0.5rem;
-filter: drop-shadow(5px 5px 6px #72716E);
+
 
 }
 
@@ -696,6 +692,11 @@ filter: drop-shadow(5px 5px 6px #72716E);
 
     #skills-small {
         display: flex;
+        font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
+        font-size: 0.8rem;
+        width: 100vw;
+        padding-left: 0.5rem;
+        filter: drop-shadow(5px 5px 6px #72716E);
         }
 }
 
