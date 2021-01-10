@@ -350,7 +350,10 @@ a {
     font-family: Varela, Geneva, Verdana, Tahoma, sans-serif;
     font-size: 2vw;
     color: #72716E;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
 }
 
 #my-skills-title {  
@@ -383,6 +386,7 @@ ul{
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 #skills-button {
@@ -397,7 +401,8 @@ ul{
     color: white;
     transform: scale (1);
     box-shadow: 6px 6px 6px #72716E;  
-    height: 3rem;
+    height: 4rem;
+    width: 10vw;
     transform: scale (1);
 }
 

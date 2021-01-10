@@ -32,11 +32,13 @@ function languageClick() {
     english[20]["innerText"] = "La experiencia que he tenido con FAC en los últimos meses es exactamente lo que espero que la industria tecnológica sea algún día, pero que sé que todavía no es: un ambiente acogedor que defiende la diversidad.";
     english[21]["innerText"] = "Sería un honor contribuir a esta cohorte inclusiva, divertida y determinada en la primavera de 2021, y a la comunidad Founders and Coders en el futuro.";
     english[22]["innerText"] = "¿qué llevaré a la cohorte?";
-    english[23]["innerText"] = "Tengo experiencia en la enseñanza, que sé por mi viaje de codificación hasta ahora es una habilidad valiosa. Los nuevos estudiantes son los mejores profesores para otros nuevos estudiantes, y también tengo la paciencia requerida...";
-    english[24]["innerText"] = "Solución de problemas: mi trabajo actual requiere que resuelva problemas sobre el terreno y trabaje con nuevos casos todos los días.";
-    english[25]["innerText"] = "aquí estará la tercero asunto";
-    english[26]["innerText"] = "Habilidades técnicas";
-    english[27]["innerText"] = "Encuéntrame en"
+    english[23]["innerText"] = "Compromiso y determinación. Estoy totalmente comprometida a ayudar a crear un ambiente acogedor e inclusivo dentro de la cohorte y dentro de la industria tecnológica en general. Estoy decidida a lograr mi objetivo de convertirme en ingeniera de software, y hacer esto junto a los amigos que he hecho, y espero seguir haciendo, en el curso.";
+    english[24]["innerText"] = "\n Una pasión por mejorar. Estoy lista para usar mis fortalezas para ayudar a mis compañeros y aprender de ellos en áreas donde necesito mejorar. De esa manera, construiremos un conjunto completo de habilidades preparadas para la industria juntos.";
+    english[25]["innerText"] = "\n Experiencia de usuario del tercer sector. Aprendes más de lo que va mal que lo que va bien. Como trabajadora de primera línea en el gobierno local, actualmente trabajo con una base de datos lenta y limitante que inhibe enormemente mis capacidades en el papel. Creo que mis experiencias de uso de mala tecnología me han ayudado a diseñar una página web sencilla y eficaz y espero que pueda combinar esta experiencia con la de mis compañeros para crear código aún más fuerte a medida que avanzan.";
+    english[26]["innerText"] = "\n Resolución de problemas. Mi trabajo actual requiere que tome muchas decisiones bajo presión, así que estoy bien versado en acciones con tiempo limitado y resolviendo problemas únicos. En mi papel, cada caso es diferente y cada circunstancia única, aunque, por supuesto, a menudo hay patrones comunes, como en la codificación. Bajo presión, he aprendido a ser tranquilo y proactivo, a utilizar el apoyo disponible para ser y crucial, para dar mi apoyo cuando sea necesario por otros.";
+    english[27]["innerText"] = "\n Tarta. Me encanta hacer golosinas, así que una vez que se levante el lockdown, estarían haciendo su camino en Space 4 para que todos disfruten."
+    english[28]["innerText"] = "Habilidades técnicas";
+    english[29]["innerText"] = "Encuéntrame en"
 
     if (buttonText == "EN") {
         languageButton[0]["innerText"] = "ES";
@@ -63,11 +65,13 @@ function languageClick() {
         english[20]["innerText"] = "The experience that I have had with FAC over the past few months is exactly what I hope the tech industry to one day be, but which I know it is yet not: a welcoming environment which champions diversity.";        
         english[21]["innerText"] = "It would be an honour to contribute to this inclusive, fun, determined cohort in Spring 2021, and the Founders and Coders community in the future.";
         english[22]["innerText"] = "what I'll bring to the cohort";
-        english[23]["innerText"] = "I have teaching experience, which I know from my coding journey so far is a valuable skill. New learners are the best teachers for other new learners, and I also have the patience required...";
-        english[24]["innerText"] = "Problem-solving: my current work requires me to problem solve on the spot, and work with new cases every day.";
-        english[25]["innerText"] = "Here will be the third point";
-        english[26]["innerText"] = "My technical skills";
-        english[27]["innerText"] = "Find me on";
+        english[23]["innerText"] = "Commitment and determination. I am fully committed to helping to create a welcoming, inclusive environment within the cohort and within the wider tech industry. I’m determined to achieve my aim of becoming a software engineer, and to do this alongside the friends I have made, and hope to continue making, on the course.";
+        english[24]["innerText"] = "\n A passion to improve. I am ready to use my strengths to help my peers and to learn from them in areas where I need to improve. That way, we will build a full set of industry-ready skills together. ";
+        english[25]["innerText"] = "\n Third sector user experience. You learn more from what goes wrong than what goes right. As a frontline worker in local government, I currently work with a slow, limiting database which massively inhibits my capabilities in the role. I believe that my experiences of using bad tech have helped me to design a simple, effective webpage and I hope that I can combine this experience with my peers’ to create even stronger code as we progress.";
+        english[26]["innerText"] = "\n Problem-solving. My current work requires a lot of decision-making under pressure, so I’m well versed in time-limited actions and solving unique problems. In my role, each case is different and each circumstance unique, though of course, there are often common patterns, much like in coding. Under pressure, I have learnt to be calm and proactive, to use the support available to be and crucially, to give my support when it is needed by others.";
+        english[27]["innerText"] = "\n Baked goods. I love making treats, so once lockdown is lifted, they’d be making their way into Space 4 for everyone to enjoy.";
+        english[28]["innerText"] = "My technical skills";
+        english[29]["innerText"] = "Find me on";
     };
 
     //this will translate the About Me pop up if it is already open:
