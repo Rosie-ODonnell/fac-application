@@ -156,7 +156,7 @@ function popUp2() {
 
     var iconTest5 = document.getElementById("icon-5")
     var img5 = document.createElement("img");
-    img5.src = "Sketch.png";
+    img5.src = "sketch.png";
     img5.id = "icon-5";
     img5.alt = "Sketch";
 
